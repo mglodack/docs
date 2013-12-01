@@ -1,3 +1,5 @@
+= partial 'swiftype'
+
 - grouped_articles = sitemap.resources.find_all{|p| p.source_file.match(/articles\/.*\.html/)}.group_by{|p| p.path.split('/')[1]}
 - grouped_articles.each do |group_name, articles|
   %h2= group_name
