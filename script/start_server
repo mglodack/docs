@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#This script uses polling to check for changed files. Otherwise doesn't work in Vagrant
+
+bundle exec middleman server --force-polling
