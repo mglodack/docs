@@ -71,3 +71,6 @@ configure :build do
   # Gzip files
   activate :gzip
 end
+
+require "lib/custom_helpers"
+helpers CustomHelpers
