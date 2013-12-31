@@ -93,7 +93,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.index {
+    width: 400px;
+    float: left;
+    height: 100%;
+}
 
+.content {
+    width: 100%;
+    min-width: 400px;
+}
 
 
 
