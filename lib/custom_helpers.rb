@@ -14,4 +14,8 @@ module CustomHelpers
   def replace_with_whitespace string
     string.gsub(/[-_]/, ' ')
   end
+
+  def to_id string
+    string.gsub(/[-_]/, '_').downcase
+  end
 end
