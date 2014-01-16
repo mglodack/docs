@@ -1,3 +1,9 @@
+---
+title: Browser Testing
+tags: testing
+category: Configure Build and Test Environment
+---
+
 ## Browser Testing
 
 ## Firefox

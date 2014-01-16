@@ -1,6 +1,5 @@
 ---
 title: Set Environment Variables
-date: 2012-01-01
 tags: testing
 category: Configure Build and Test Environment
 ---
