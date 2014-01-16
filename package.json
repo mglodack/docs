@@ -1,0 +1,7 @@
+{
+  "name": "codeship-docs",
+  "dependencies" : {
+    "bower"   :  "*",
+    "grunt-cli" : "*"
+  }
+}
