@@ -7,11 +7,12 @@
     <title>#{ current_page.data.title || "Codeship Docs"}</title>
     <meta name="description" content="">
 
-    = stylesheet_link_tag "app", "main"
+    = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
   %body
     = partial 'swiftype'
 
+    .off-canvas-wrap
     .col-md-12
       .row
         .col-md-2

@@ -33,7 +33,6 @@ end
 
 set :markdown, :layout_engine => :haml
 
-# sprockets.append_path "bower_components/foundation/css"
 sprockets.append_path "bower_components/foundation/js"
 sprockets.append_path "bower_components/modernizr"
 sprockets.append_path "bower_components/jquery"
