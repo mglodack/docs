@@ -1,3 +1,10 @@
+---
+title: Set Environment Variables
+date: 2012-01-01
+tags: testing
+category: Configure Build and Test Environment
+---
+
 ## Set Environment Variables
 
 If you set an environment variable it will stay for the whole build. You can set your Environment Variables in two different ways.

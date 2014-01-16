@@ -18,4 +18,15 @@ module CustomHelpers
   def to_id string
     string.gsub(/[-_]/, '_').downcase
   end
+
+  # create an <ul> list with links to all the parent pages down to the root
+  def trail_nav
+    p = current_page
+    res=Array.new
+    res << "<li>#{link_to article_title(p), p.path}</li>"
+    while p=p.parent
+      res << "<li>#{link_to article_title(p), p.path }</li>"
+    end
+    return "<ol class='breadcrumb'>" + res.reverse.join(" ") + "</ol>"
+  end
 end

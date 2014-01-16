@@ -45,16 +45,24 @@
               %a{href: "/#links"}Useful Links
         .col-md-10
           - nav_tree = current_page.source_file.match(/articles\/.*\.html/).to_s.split('/')
-          - if nav_tree.present?
-            %ol.breadcrumb
-              %li
-                %a{href: "/"} Overview
-              %li
-                %a{href: "/##{to_id nav_tree[1]}"}= replace_with_whitespace nav_tree[1]
-              %li
-                = replace_with_whitespace nav_tree[2]
+          = trail_nav
+          / - if nav_tree.present?
+          /   %ol.breadcrumb
+          /     %li
+          /       %a{href: "/"} Overview
+          /     %li
+          /       %a{href: "/#{nav_tree[1].downcase}"}= replace_with_whitespace nav_tree[1]
+          /     %li
+          /       = replace_with_whitespace nav_tree[2]
           ~ yield
 
+
+    %h2 Tags
+    %ol
+      - blog.tags.each do |tag, articles|
+        %li
+          = link_to tag, tag_path(tag)
+          (#{articles.size})
 
     %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
     %a.intercom{href: ""} Contact the Codeship Team
