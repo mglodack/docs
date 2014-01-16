@@ -1,93 +1,15 @@
 %h1 Overview
 
-%h2 Content
 %ul
-  %li#tutorials
-    Tutorials
-    %ul
-      %li How to test and deploy a Rails app from Github to Heroku
-      %li How to test and deploy a node.js app from Bitbucket to nodejitsu
+  = list_item_for_category 'Tutorials'
   = list_item_for_category 'Configure Build and Test Environment'
-  %li#configure_build_and_test_environment
-    %a{href: "#{category_path('Configure Build and Test Environment')}"} Configure Build and Test Environment
-    %ul
-      - sitemap.where(category: "Configure Build and Test Environment").all.each_with_index do |article, i|
-        %li
-          = link_to article_title(article), article
-
-    %ul
-      %li Setup and Test Commands
-      %li
-        %a{href: "/configure-build-and-test-environment/set-environment-variables"} Set Environment Variables
-      %li Access to other repositories fails during the build
-      %li Keeping build result files
-      %li Skipping a build (inkl. not possible to limit branches)
-  %li#deployment
-    Configure Deployments
-    %ul
-      %li Create Deployment Pipelines
-      %li Deploying to Heroku
-      %li Deploying to Engine Yard
-      %li Deploying to Nodejitsu
-      %li Deploying to Google App Engine
-      %li Deploying to DotCloud
-      %li Deploying to CloudFoundry
-      %li Deploying to Modulus.io
-      %li Deploying with Capistrano
-      %li Deploying a Middleman app to AWS
-      %li Deploying to your own FTP Server
-      %li Deploying to Digital Ocean
-      %li Deploying an angular app to Heroku
-      %li Deploying with your own Script
-  %li#managing_project
-    Managing your project
-    %ul
-      %li Manage Team member
-      %li Transfer Project Ownership
-      %li Setup 3rd party notification systems
-      %li Codeship SSH Public Key of my project
-  %li#languages
-    Supported Languages and Frameworks
-    %ul
-      %li Ruby
-      %li Python
-      %li Node.js
-      %li Java and JVM based languages
-      %li PHP
-      %li Dart
-      %li Google Go
-  %li#databases
-    Installed Databases, Queues and Datastores
-    %ul
-      %li Postgresql
-      %li SQLite
-      %li Mysql
-      %li MongoDB
-      %li Redis
-      %li ElasticSearch
-      %li Beanstalkd
-      %li Memcached
-  %li#browsers
-    Installed Browsers for Testing
-  %li#troubleshooting
-    Troubleshooting
-    %ul
-      %li My push to heroku got rejected
-      %li Can't find gems to install them
-      %li No such file or directory config - something.yml
-      %li Pending step in cucumber fails build
-      %li Tests are idle and abort after 10 minutes - Run a command in the background
-  %li#codeship_infrastructure
-    Codeship Security and Infrastructure
-    %ul
-      %li OS & Virtualization
-      %li Firewall
-  %li#links
-    Useful Links
-    %ul
-      %li Check out our Blog for information about testing, continuous deployment and software development in general
-      %li Information about CI and CD
-
+  = list_item_for_category 'Deployment'
+  = list_item_for_category 'Managing your project'
+  = list_item_for_category 'Languages and Frameworks'
+  = list_item_for_category 'Databases and Queues'
+  = list_item_for_category 'Troubleshooting'
+  = list_item_for_category 'Security and Infrastructure'
+  = list_item_for_category 'Useful Links'
 
 / - grouped_articles.each do |group_name, articles|
 /   %h2= group_name

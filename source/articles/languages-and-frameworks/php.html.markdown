@@ -1,3 +1,9 @@
+---
+title: PHP
+tags: php
+category: Languages and Frameworks
+---
+
 ## PHP
 We use **PHPENV** to manage PHP versions. We currently have 5.3 , 5.4 and 5.5 installed. By default we use 5.4
 These are aliases that are pointing to the specific 5.x.x versions we have installed.

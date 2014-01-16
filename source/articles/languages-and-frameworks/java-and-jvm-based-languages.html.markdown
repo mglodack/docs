@@ -1,3 +1,9 @@
+---
+title: Java and JVM based languages
+tags: java
+category: Languages and Frameworks
+---
+
 ## Java and JVM based languages
 
 We have **Java 7 (openjdk-7-jdk)** installed on our virtual machines. **JAVA_HOME** is set to **/usr/lib/jvm/java-7-openjdk-amd64/**

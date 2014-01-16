@@ -1,4 +1,10 @@
-## Pending step in cucumber fails build?
+---
+title: Pending step in cucumber fails build?
+tags: build error
+category: Troubleshooting
+---
+
+# Pending step in cucumber fails build?
 
 The cucumber option **--strict** fails the build if you have a pending or undefined step.
 

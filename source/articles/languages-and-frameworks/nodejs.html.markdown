@@ -1,3 +1,9 @@
+---
+title: Node.js
+tags: nodejs
+category: Languages and Frameworks
+---
+
 ## Node.js
 We use **nvm** to manage different node versions. We read the node version you set in your **package.json** and install the appropriate one.
 

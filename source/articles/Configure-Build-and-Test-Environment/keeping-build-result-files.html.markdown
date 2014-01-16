@@ -1,4 +1,10 @@
-## Can I keep build result files?
+---
+title: Keeping build result files
+tags: faq, artifacts
+category: Configure Build and Test Environment
+---
+
+# Can I keep build result files?
 
 You can push artifacts generated during your build to S3 or any other storage provider. Each project has its own public key which you can use to grant access to your storage provider for Codeship only and for example upload files through SFTP as well. You'll find the public key in your project settings on the general page.
 

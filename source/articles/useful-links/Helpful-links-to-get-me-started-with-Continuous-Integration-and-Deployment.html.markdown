@@ -1,4 +1,9 @@
-## Helpful links to get me started with Continuous Integration and Deployment
+---
+title: Helpful links to get me started with Continuous Integration and Deployment
+category: Useful Links
+---
+
+# Helpful links to get me started with Continuous Integration and Deployment
 
 * [Introduction to Continuous Integration by Martin Fowler](http://martinfowler.com/articles/continuousIntegration.html)
 * [Why Continuous Deployment by Eric Ries](http://www.startuplessonslearned.com/2009/06/why-continuous-deployment.html)

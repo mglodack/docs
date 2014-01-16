@@ -1,3 +1,9 @@
+---
+title: Postgresql
+tags: database
+category: Databases and Queues
+---
+
 ## Postgresql
 
 PostgreSQL **9.2.4** runs on the default port and the credentials are stored in the **PG_USER** and **PG_PASSWORD** environment variables.

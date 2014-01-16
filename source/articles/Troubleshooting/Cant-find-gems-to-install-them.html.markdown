@@ -1,4 +1,10 @@
-## Can't find gems to install them
+---
+title: Can't find gems to install them
+tags: build error
+category: Troubleshooting
+---
+
+# Can't find gems to install them
 
 Sometimes you might see errors like the following:
 

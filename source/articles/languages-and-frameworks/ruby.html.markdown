@@ -1,3 +1,9 @@
+---
+title: Ruby
+tags: ruby
+category: Languages and Frameworks
+---
+
 ## Ruby
 
 We use RVM to manage different Ruby versions. We set <strong>1.9.3-p327</strong> as the default version. Currently we do not load the Ruby version from your Gemfile. You can always change the Ruby version by running:

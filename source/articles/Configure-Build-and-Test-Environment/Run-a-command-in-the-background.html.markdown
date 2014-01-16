@@ -1,4 +1,10 @@
-## Run a command in the background
+---
+title: Run a command in the background
+tags: testing
+category: Configure Build and Test Environment
+---
+
+# Run a command in the background
 
 Sometimes you might want to run a command, a server or anything in the background. You can use the following template to run any of your commands as a background process
 
