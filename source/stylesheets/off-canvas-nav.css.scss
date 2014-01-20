@@ -1,27 +1,27 @@
-@mixin display-sidbar {
-  .inner-wrap {
-    @include translate2d($off-canvas-width,0);
-  }
+// @mixin display-sidbar {
+//   .inner-wrap {
+//     @include translate2d($off-canvas-width,0);
+//   }
 
-  .inner-wrap {
-    @include translate3d($off-canvas-width,0,0);
-  }
+//   .inner-wrap {
+//     @include translate3d($off-canvas-width,0,0);
+//   }
 
-  // Opera 12.16 and IE9 - don't have 3d transforms
-  .csstransforms.no-csstransforms3d {
-    .inner-wrap { @include translate2d($off-canvas-width,0); }
-  }
+//   // Opera 12.16 and IE9 - don't have 3d transforms
+//   .csstransforms.no-csstransforms3d {
+//     .inner-wrap { @include translate2d($off-canvas-width,0); }
+//   }
 
-  // Older browsers
-  .no-csstransforms {
-    .inner-wrap { left: $off-canvas-width; }
-  }
-}
+//   // Older browsers
+//   .no-csstransforms {
+//     .inner-wrap { left: $off-canvas-width; }
+//   }
+// }
 
-@media #{$large-up} {
-  @include display-sidbar;
-}
+// @media #{$large-up} {
+//   @include display-sidbar;
+// }
 
-.main-section {
-  margin: $block-grid-default-spacing;
-}
+// .main-section {
+//   margin: $block-grid-default-spacing;
+// }

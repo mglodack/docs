@@ -30,7 +30,7 @@ module CustomHelpers
     end
 
     category_container << "<ul>" + category_pages.join(" ") + "</ul>"
-    return "<li>" + category_container.join(" ") + "</li>"
+    return "<div class='category-item'>" + category_container.join(" ") + "</div>"
   end
 
   # create an <ul> list with links to all the parent pages down to the root
