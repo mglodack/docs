@@ -1,8 +1,10 @@
-<form>
-  <input type="text" id="st-search-input" class="st-search-input" />
-</form>
-<script type="text/javascript">
-var Swiftype = window.Swiftype || {};
+%form
+  .row.collapse.searchform
+    %input.searchfield{type: "text", id: "st-search-input", placeholder: "I am looking for ..."}
+    %a.button.search{href: "#"} Search
+
+:javascript
+  var Swiftype = window.Swiftype || {};
   (function() {
     Swiftype.key = 'oGdr18ibPZHCBBPYsHb6';
 
@@ -12,4 +14,3 @@ var Swiftype = window.Swiftype || {};
     var entry = document.getElementsByTagName('script')[0];
     document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
   }());
-</script>

@@ -10,36 +10,30 @@
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
   %body
-    = partial 'swiftype'
-
     .off-canvas-wrap
-    .col-md-12
-      .row
-        .col-md-2
-          %h2 Index
-          %ul
-            %li
-              %a{href: "/#getting_started"} Getting Started
-            %li
-              %a{href: "/#configure_build_and_test_environment"} Configure Build and Test Environment
-            %li
-              %a{href: "/#deployment"} Configure Deployments
-            %li
-              %a{href: "/#managing_project"} Managing your project
-            %li
-              %a{href: "/#languages"} Supported Languages and Frameworks
-            %li
-              %a{href: "/#databases"} Installed Databases, Queues and Datastores
-            %li
-              %a{href: "/#browsers"} Installed Browsers for Testing
-            %li
-              %a{href: "/#troubleshooting"} Troubleshooting
-            %li
-              %a{href: "/#codeship_infrastructure"} Codeship Security and Infrastructure
-            %li
-              %a{href: "/#links"}Useful Links
-        .col-md-10
-          - nav_tree = current_page.source_file.match(/articles\/.*\.html/).to_s.split('/')
+      .inner-wrap
+        %nav.tab-bar.hide-for-large-up
+          %section.left-small
+            %a.left-off-canvas-toggle.menu-icon
+              %span
+
+          %section.middle.tab-bar-section
+            %h1.title Codeship Documentation
+
+        %aside.left-off-canvas-menu
+          %ul.off-canvas-list
+            %li= link_to "Tutorials", category_path("Tutorials")
+            %li= link_to "Configure Build and Test Environment", category_path("Configure Build and Test Environment")
+            %li= link_to "Deployment", category_path("Deployment")
+            %li= link_to "Managing your project", category_path("Managing your project")
+            %li= link_to "Languages and Frameworks", category_path("Languages and Frameworks")
+            %li= link_to "Databases and Queues", category_path("Databases and Queues")
+            %li= link_to "Troubleshooting", category_path("Troubleshooting")
+            %li= link_to "Security and Infrastructure", category_path("Security and Infrastructure")
+            %li= link_to "Useful Links", category_path("Useful Links")
+
+        %section.main-section
+          = partial 'swiftype'
           = trail_nav
           / - if nav_tree.present?
           /   %ol.breadcrumb
@@ -51,17 +45,17 @@
           /       = replace_with_whitespace nav_tree[2]
           ~ yield
 
+          %h2 Tags
+          %ol
+            - blog.tags.each do |tag, articles|
+              %li
+                = link_to tag, tag_path(tag)
+                (#{articles.size})
 
-    %h2 Tags
-    %ol
-      - blog.tags.each do |tag, articles|
-        %li
-          = link_to tag, tag_path(tag)
-          (#{articles.size})
+          %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
+          %a.intercom{href: ""} Contact the Codeship Team
 
-    %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
-    %a.intercom{href: ""} Contact the Codeship Team
-
+      %a.exit-off-canvas
 
     = javascript_include_tag "all"
     :javascript

@@ -1,0 +1,29 @@
+.searchform {
+  margin-left: 0;
+}
+
+.search {
+  @include prefix-postfix-base();
+  @include grid-column(
+    $columns:3,
+    $float:left
+  );
+}
+
+input[type="text"].searchfield {
+  @include grid-column($columns:9);
+}
+
+@media #{$large-up} {
+  .search {
+    @include prefix-postfix-base();
+    @include grid-column(
+      $columns:2,
+      $float:left
+    );
+  }
+
+  input[type="text"].searchfield {
+    @include grid-column($columns:7);
+  }
+}
