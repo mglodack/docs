@@ -10,52 +10,46 @@
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
   %body
-    .off-canvas-wrap
-      .inner-wrap
-        %nav.tab-bar.hide-for-large-up
-          %section.left-small
-            %a.left-off-canvas-toggle.menu-icon
-              %span
+    .row.full-width
+      %ul.side-nav.large-3.columns
+        %li= link_to "Tutorials", category_path("Tutorials")
+        %li= link_to "Configure Build and Test Environment", category_path("Configure Build and Test Environment")
+        %li= link_to "Deployment", category_path("Deployment")
+        %li= link_to "Managing your project", category_path("Managing your project")
+        %li= link_to "Languages and Frameworks", category_path("Languages and Frameworks")
+        %li= link_to "Databases and Queues", category_path("Databases and Queues")
+        %li= link_to "Troubleshooting", category_path("Troubleshooting")
+        %li= link_to "Security and Infrastructure", category_path("Security and Infrastructure")
+        %li= link_to "Useful Links", category_path("Useful Links")
 
-          %section.middle.tab-bar-section
-            %h1.title Codeship Documentation
-
-        %aside.left-off-canvas-menu
-          %ul.off-canvas-list
-            %li= link_to "Tutorials", category_path("Tutorials")
-            %li= link_to "Configure Build and Test Environment", category_path("Configure Build and Test Environment")
-            %li= link_to "Deployment", category_path("Deployment")
-            %li= link_to "Managing your project", category_path("Managing your project")
-            %li= link_to "Languages and Frameworks", category_path("Languages and Frameworks")
-            %li= link_to "Databases and Queues", category_path("Databases and Queues")
-            %li= link_to "Troubleshooting", category_path("Troubleshooting")
-            %li= link_to "Security and Infrastructure", category_path("Security and Infrastructure")
-            %li= link_to "Useful Links", category_path("Useful Links")
-
-        %section.main-section
-          = partial 'swiftype'
-          = trail_nav
-          / - if nav_tree.present?
-          /   %ol.breadcrumb
-          /     %li
-          /       %a{href: "/"} Overview
-          /     %li
-          /       %a{href: "/#{nav_tree[1].downcase}"}= replace_with_whitespace nav_tree[1]
-          /     %li
-          /       = replace_with_whitespace nav_tree[2]
-          ~ yield
-
-          %h2 Tags
-          %ol
+      %section.large-9.columns
+        = partial 'swiftype'
+        = trail_nav
+        .panel
+          %h2 Looking for ...
+          %ul.inline-list
             - blog.tags.each do |tag, articles|
               %li
-                = link_to tag, tag_path(tag)
-                (#{articles.size})
+                = link_to "#{tag} (#{articles.size})", tag_path(tag)
 
-          %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
-          %a.intercom{href: ""} Contact the Codeship Team
 
-      %a.exit-off-canvas
+
+        / - if nav_tree.present?
+        /   %ol.breadcrumb
+        /     %li
+        /       %a{href: "/"} Overview
+        /     %li
+        /       %a{href: "/#{nav_tree[1].downcase}"}= replace_with_whitespace nav_tree[1]
+        /     %li
+        /       = replace_with_whitespace nav_tree[2]
+        ~ yield
+
+
+
+
+        %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
+        %a.intercom{href: ""} Contact the Codeship Team
+
 
     = javascript_include_tag "all"
     :javascript
