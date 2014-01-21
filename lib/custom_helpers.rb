@@ -23,7 +23,7 @@ module CustomHelpers
     category_container = Array.new
     category_pages = Array.new
 
-    category_container << link_to(category, category_path(category))
+    category_container << link_to(category, category_path(category), class: :title)
 
     sitemap.where(category: category).all.each_with_index do |article, i|
       category_pages << "<li>#{link_to article_title(article), article}</li>"

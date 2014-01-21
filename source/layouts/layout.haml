@@ -9,6 +9,7 @@
 
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
+
   %body.hide-extras
     .off-canvas-wrap
       .inner-wrap
@@ -55,6 +56,10 @@
       %a.exit-off-canvas
 
     = javascript_include_tag "all"
+    = javascript_include_tag "masonry"
+
+    = yield_content(:javascript)
+
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

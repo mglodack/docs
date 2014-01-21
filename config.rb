@@ -36,6 +36,8 @@ set :markdown, :layout_engine => :haml
 sprockets.append_path "bower_components/foundation/js"
 sprockets.append_path "bower_components/modernizr"
 sprockets.append_path "bower_components/jquery"
+sprockets.append_path "bower_components/masonry"
+
 
 set :css_dir, 'stylesheets'
 
