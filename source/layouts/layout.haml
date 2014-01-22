@@ -13,11 +13,11 @@
   %body.hide-extras
     .off-canvas-wrap
       .inner-wrap
-        %nav.tab-bar.show-for-small
+        %nav.tab-bar
           %a.left-off-canvas-toggle.menu-icon
             %span
 
-          %section.middle.tab-bar-section
+          %section.left.tab-bar-section
             Codeship Documentation
 
         %aside.index-menu
@@ -36,7 +36,6 @@
           = partial 'swiftype'
           = trail_nav
           .panel
-            %h2 Looking for ...
             %ul.inline-list
               - blog.tags.each do |tag, articles|
                 %li= link_to "#{tag} (#{articles.size})", tag_path(tag)

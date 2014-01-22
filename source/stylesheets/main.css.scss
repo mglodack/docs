@@ -1,5 +1,11 @@
+.left-off-canvas-toggle.menu-icon {
+    @media #{$large-up} {
+        display: none;
+    }
+}
+
 .index-menu {
-    @media #{$medium-up} {
+    @media #{$large-up} {
         @include grid-column(
             $columns:2,
             $float:left
@@ -10,12 +16,22 @@
         }
     }
 
-    @media #{$small-only} {
+    @media #{$medium-down} {
         @include left-off-canvas-menu;
 
         ul {
             @include off-canvas-list;
         }
+    }
+
+    .codeship {
+        margin: 1rem auto;
+        background: image-url('logo_codeship.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100%;
+        width: 80%;
+        height: 40px;
     }
 }
 
@@ -23,12 +39,14 @@
     background: $main-section-bg;
     padding-top: 1rem;
 
-    @include grid-column(
-        $columns:10,
-        $float:left
-      );
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:10,
+            $float:left
+          );
+    }
 
-    @media #{$small-only} {
+    @media #{$medium-down} {
         @include grid-column(
             $columns:12,
             $float:left
@@ -48,7 +66,7 @@
     @media #{$medium-only} {
         .gutter-sizer { width: 3%; }
         .category-item {
-            width: 44%;
+            width: 48%;
             margin-bottom: 3%;
         }
     }
