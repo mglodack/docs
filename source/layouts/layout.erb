@@ -14,7 +14,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <%= stylesheet_link_tag 'normalize', 'main' %>
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <%= javascript_include_tag 'main', 'plugins', 'vendor/modernizr-2.6.1.min.js' %>
     </head>
     <body>
         <!--[if lt IE 7]>
