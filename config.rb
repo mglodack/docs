@@ -67,6 +67,8 @@ configure :build do
 
   # Gzip files
   activate :gzip
+
+  activate :asset_host, host: 'http://docs.codeship.io.s3-website-us-east-1.amazonaws.com/'
 end
 
 require "lib/custom_helpers"
