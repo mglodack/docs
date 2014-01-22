@@ -17,8 +17,8 @@
           %a.left-off-canvas-toggle.menu-icon
             %span
 
-          %section.left.tab-bar-section
-            Codeship Documentation
+          %section.middle.tab-bar-section
+            = link_to "Codeship Documentation", "/", class: :codeship
 
         %aside.index-menu
           %ul
@@ -49,10 +49,13 @@
           /       = replace_with_whitespace nav_tree[2]
           ~ yield
 
-          %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
-          %a.intercom{href: ""} Contact the Codeship Team
+          %footer.info
+            %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
+            %a.intercom{href: ""} Contact the Codeship Team
 
       %a.exit-off-canvas
+
+
 
     = javascript_include_tag "all"
     = javascript_include_tag "masonry"

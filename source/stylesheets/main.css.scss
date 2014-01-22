@@ -1,27 +1,16 @@
-.left-off-canvas-toggle.menu-icon {
-    @media #{$large-up} {
-        display: none;
+.tab-bar-section .codeship {
+    color: white;
+
+    &:hover {
+        color: darken(white, 10%);
     }
 }
 
 .index-menu {
-    @media #{$large-up} {
-        @include grid-column(
-            $columns:2,
-            $float:left
-          );
+    @include left-off-canvas-menu;
 
-        ul {
-            @include off-canvas-list;
-        }
-    }
-
-    @media #{$medium-down} {
-        @include left-off-canvas-menu;
-
-        ul {
-            @include off-canvas-list;
-        }
+    ul {
+        @include off-canvas-list;
     }
 
     .codeship {
@@ -39,19 +28,11 @@
     background: $main-section-bg;
     padding-top: 1rem;
 
-    @media #{$large-up} {
-        @include grid-column(
-            $columns:10,
-            $float:left
-          );
-    }
+    @include grid-column(
+        $columns:12,
+        $float:left
+      );
 
-    @media #{$medium-down} {
-        @include grid-column(
-            $columns:12,
-            $float:left
-          );
-    }
 }
 
 #categories {
@@ -99,9 +80,15 @@
             background: $highlight-hover-bg;
         }
     }
+}
 
-    ul {
-        @include side-nav;
-        margin: 1rem;
-    }
+.category-list {
+    @include side-nav;
+    margin: 1rem;
+}
+
+.info {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
 }

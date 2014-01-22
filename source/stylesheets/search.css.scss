@@ -1,12 +1,12 @@
-.searchform {
-  @include border-radius;
-  background: $highlight-bg;
-  padding: 1rem 1rem 0 1rem;
+// .searchform {
+//   @include border-radius;
+//   background: $highlight-bg;
+//   padding: 1rem 1rem 0 1rem;
 
-  &:hover {
-    background: $highlight-hover-bg;
-  }
-}
+//   &:hover {
+//     background: $highlight-hover-bg;
+//   }
+// }
 
 .search {
   @include prefix-postfix-base();

@@ -29,7 +29,7 @@ module CustomHelpers
       category_pages << "<li>#{link_to article_title(article), article}</li>"
     end
 
-    category_container << "<ul>" + category_pages.join(" ") + "</ul>"
+    category_container << "<ul class='category-list'>" + category_pages.join(" ") + "</ul>"
     return "<div class='category-item'>" + category_container.join(" ") + "</div>"
   end
 

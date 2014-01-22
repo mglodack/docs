@@ -35,7 +35,7 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: #f1f3f6;
+$body-bg: #e7ebf0;
 $main-section-bg: #e7ebf0;
 $highlight-bg: #aebccc;
 $highlight-hover-bg: #7eafba;
@@ -53,7 +53,7 @@ $highlight-hover-bg: #7eafba;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #4b75be;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -544,7 +544,7 @@ $tabbar-bg: #4b75be;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: 250px;
-$off-canvas-bg: lighten($body-bg, 5%);
+$off-canvas-bg: lighten($tabbar-bg, 5%);
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
@@ -556,7 +556,7 @@ $off-canvas-bg: lighten($body-bg, 5%);
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-$off-canvas-link-color: rgba(#000, 0.7);
+$off-canvas-link-color: rgba(#fff, 0.7);
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
 
 // Off Canvas Menu Icon Variables

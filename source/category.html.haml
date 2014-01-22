@@ -1,6 +1,7 @@
-%h1 #{category_to_title category}
+%section.category
+  %h1 #{category_to_title category}
 
-%ul
-  - page_articles.each_with_index do |article, i|
-    %li
-      = link_to article_title(article), article
+  %ul.category-list
+    - page_articles.each_with_index do |article, i|
+      %li
+        = link_to article_title(article), article
