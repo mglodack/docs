@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/codeship/middleman-blog.git
-  revision: 7cd5581b90a83dcd6d91ce72c6787c28fa27bd66
+  revision: 0745bea06df01cf60baab8b902adfb512ddacf1a
   specs:
     middleman-blog (3.5.1)
       addressable (~> 2.3.5)
