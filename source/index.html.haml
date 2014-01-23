@@ -19,15 +19,34 @@
 
   #categories
     .gutter-sizer
-    = list_item_for_category 'Tutorials'
-    = list_item_for_category 'Configure Build and Test Environment'
-    = list_item_for_category 'Deployment'
-    = list_item_for_category 'Managing your project'
-    = list_item_for_category 'Languages and Frameworks'
-    = list_item_for_category 'Databases and Queues'
-    = list_item_for_category 'Troubleshooting'
-    = list_item_for_category 'Security and Infrastructure'
-    = list_item_for_category 'Useful Links'
+    .category-item
+      %h4 Getting Started
+      %ul.category-list
+        %li Languages
+        %li Databases
+        %li Setting up your tests
+        %li Setting up your deployments
+
+    .category-item
+      %h4 I ran into some issues
+      %ul.category-list
+        %li issue1
+        %li issue1
+        %li issue1
+        %li issue1
+
+
+  / #categories
+  /   .gutter-sizer
+  /   = list_item_for_category 'Tutorials'
+  /   = list_item_for_category 'Configure Build and Test Environment'
+  /   = list_item_for_category 'Deployment'
+  /   = list_item_for_category 'Managing your project'
+  /   = list_item_for_category 'Languages and Frameworks'
+  /   = list_item_for_category 'Databases and Queues'
+  /   = list_item_for_category 'Troubleshooting'
+  /   = list_item_for_category 'Security and Infrastructure'
+  /   = list_item_for_category 'Useful Links'
 
 
   / - grouped_articles.each do |group_name, articles|
