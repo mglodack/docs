@@ -58,14 +58,15 @@ configure :build do
   # Enable cache buster
   activate :asset_hash
 
-  # Use relative URLs
-  activate :relative_assets
-
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  set :http_prefix, "/documentation"
 
   # Gzip files
   activate :gzip
+
+  activate :asset_host, host: 'http://docs.codeship.io.s3-website-us-east-1.amazonaws.com/'
+
+  set :build_dir, 'build/documentation'
 end
 
 ###
