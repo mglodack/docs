@@ -20,19 +20,20 @@
           %section.middle.tab-bar-section
             = link_to "Codeship Documentation", "/", class: :codeship
 
-        %aside.index-menu
+        %aside.index-menu.hide-for-large-up
           %ul
-            %li= link_to "Tutorials", category_path("Tutorials")
-            %li= link_to "Configure Build and Test Environment", category_path("Configure Build and Test Environment")
-            %li= link_to "Deployment", category_path("Deployment")
-            %li= link_to "Managing your project", category_path("Managing your project")
-            %li= link_to "Languages and Frameworks", category_path("Languages and Frameworks")
-            %li= link_to "Databases and Queues", category_path("Databases and Queues")
-            %li= link_to "Troubleshooting", category_path("Troubleshooting")
-            %li= link_to "Security and Infrastructure", category_path("Security and Infrastructure")
-            %li= link_to "Useful Links", category_path("Useful Links")
+            = list_item_for_category 'Tutorials'
+            = list_item_for_category 'Configure Build and Test Environment'
+            = list_item_for_category 'Deployment'
+            = list_item_for_category 'Managing your project'
+            = list_item_for_category 'Languages and Frameworks'
+            = list_item_for_category 'Databases and Queues'
+            = list_item_for_category 'Troubleshooting'
+            = list_item_for_category 'Security and Infrastructure'
+            = list_item_for_category 'Useful Links'
 
         %section.main-section{role: "main"}
+          %h4= link_to "Codeship Documentation", "/", class: :codeship
           = partial 'swiftype'
           = trail_nav
           .panel

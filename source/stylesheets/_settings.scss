@@ -788,6 +788,7 @@ $off-canvas-link-color: rgba(#fff, 0.7);
 
 // We use this to control padding.
 // $side-nav-padding: rem-calc(14 0);
+$side-nav-padding: rem-calc(10);
 
 // We use these to control list styles.
 // $side-nav-list-type: none;
@@ -1133,8 +1134,9 @@ $off-canvas-link-color: rgba(#fff, 0.7);
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+//$anchor-font-color-hover: scale-color($primary-color, $lightness: -20%);
+$anchor-font-color-hover: $highlight-hover-bg;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
