@@ -21,6 +21,7 @@
             = link_to "Codeship Documentation", "/", class: :codeship
 
         %aside.index-menu
+          = link_to "", "http://www.codeship.io", class: :codeship
           %ul
             = list_item_for_category 'Tutorials'
             = list_item_for_category 'Configure Build and Test Environment'
@@ -33,21 +34,14 @@
             = list_item_for_category 'Useful Links'
 
         %section.main-section{role: "main"}
-          %h4= link_to "Codeship Documentation", "/", class: :codeship
+          %h4= link_to "Documentation", "/", class: :codeship
           = partial 'swiftype'
-          = trail_nav
+          = breadcrumbs
           .panel
             %ul.inline-list
               - blog.tags.each do |tag, articles|
                 %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-          / - if nav_tree.present?
-          /   %ol.breadcrumb
-          /     %li
-          /       %a{href: "/"} Overview
-          /     %li
-          /       %a{href: "/#{nav_tree[1].downcase}"}= replace_with_whitespace nav_tree[1]
-          /     %li
-          /       = replace_with_whitespace nav_tree[2]
+
           ~ yield
 
           %footer.info

@@ -33,14 +33,16 @@ module CustomHelpers
     return "<div class='category-item'>" + category_container.join(" ") + "</div>"
   end
 
-  # create an <ul> list with links to all the parent pages down to the root
-  def trail_nav
-    p = current_page
+  def breadcrumbs
     res=Array.new
-    res << "<li>#{link_to article_title(p), p}</li>"
-    while p=p.parent
-      res << "<li>#{link_to article_title(p), p }</li>"
+    res << "#{link_to "index", "/"}"
+    tree = current_page.request_path.gsub(/index\.html/, "").split("/")
+    for i in 0..(tree.length - 1)
+      next if tree[i] == TAGLINK
+      page_path = tree[0..i].join("/") + "/index.html"
+      page = sitemap.find_resource_by_destination_path page_path
+      res << "#{link_to article_title(page), page}"
     end
-    return "<ol class='breadcrumb'>" + res.reverse.join(" ") + "</ol>"
+    return "<nav class='breadcrumbs'>" + res.join(" ") + "</nav>"
   end
 end
