@@ -25,7 +25,7 @@
 
     .main-section {
         @include grid-column(
-            $columns:12,
+            $columns:8,
             $float:left
           );
     }
