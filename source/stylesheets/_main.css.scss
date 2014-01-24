@@ -64,33 +64,6 @@
     }
 }
 
-// .index-menu {
-//     @media #{$medium-down} {
-//         @include left-off-canvas-menu;
-
-//         ul {
-//             @include off-canvas-list;
-//         }
-
-//         .codeship {
-//             margin: 1rem auto;
-//             background: image-url('logo_codeship.png');
-//             background-repeat: no-repeat;
-//             background-position: left center;
-//             background-size: 100%;
-//             width: 80%;
-//             height: 40px;
-//         }
-//     }
-
-//      @media #{$large-up} {
-//         @include grid-column(
-//             $columns:3,
-//             $float:left
-//           );
-//      }
-// }
-
 .index-menu {
     .codeship {
         margin-top: 0.2rem;
@@ -109,38 +82,6 @@
 .main-section {
     background: $main-section-bg;
     padding-top: 1rem;
-}
-
-#categories {
-    @media #{$large-up} {
-        // .gutter-sizer { width: 3.33%; }
-        // .category-item {
-        //     width: 30.33%;
-        //     margin-bottom: 3%;
-        // }
-        .gutter-sizer { width: 3%; }
-        .category-item {
-            width: 48%;
-            margin-bottom: 3%;
-        }
-    }
-
-    @media #{$medium-only} {
-        .gutter-sizer { width: 3%; }
-        .category-item {
-            width: 48%;
-            margin-bottom: 3%;
-        }
-    }
-
-
-    @media #{$small-only} {
-        .gutter-sizer { width: 0%; }
-        .category-item {
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-    }
 }
 
 .category-item {
@@ -177,4 +118,19 @@
     margin-top: 50px;
     width: 100%;
     height: 100%;
+}
+
+.overview {
+    @include grid-row();
+    .getting-started,
+    .troubleshooting {
+        @include box-sizing(border-box);
+        @include grid-column(6);
+        padding: 0 5px;
+
+        .index {
+            border: $panel-border-style $panel-border-size $panel-border-color;
+            background: $panel-bg;
+        }
+    }
 }

@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>#{ current_page.data.title || "Codeship Docs"}</title>
+    <title>#{ current_page.data.title || "Codeship Documentation"}</title>
     <meta name="description" content="">
 
     = stylesheet_link_tag "app"
@@ -47,8 +47,12 @@
           = breadcrumbs
           .panel
             %ul.inline-list
-              - blog.tags.each do |tag, articles|
-                %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+              - if current_page.data.include? 'tag'
+                - current_page.tags.each do |tag|
+                  %li= link_to "#{tag} (#{blog.tags[tag].size})", tag_path(tag)
+              - else
+                - blog.tags.each do |tag, articles|
+                  %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
 
           ~ yield
 
@@ -61,7 +65,6 @@
 
 
     = javascript_include_tag "all"
-    = javascript_include_tag "masonry"
 
     = yield_content(:javascript)
 
