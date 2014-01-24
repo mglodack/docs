@@ -5,7 +5,6 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   # config.add_import_path File.join "#{root}", "bower_components/foundation/scss"
-  config.add_import_path "bower_components/foundation/scss"
 
   # Set this to the root of your project when deployed:
   config.http_path = "/"
@@ -13,6 +12,7 @@ compass_config do |config|
   config.sass_dir = "stylesheets"
   config.images_dir = "images"
   config.javascripts_dir = "javascripts"
+  config.fonts_dir = "fonts"
 
   # You can select your preferred output style here (can be overridden via the command line):
   # output_style = :expanded or :nested or :compact or :compressed
@@ -37,18 +37,11 @@ set :markdown, :layout_engine => :haml
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :fonts_dir, 'fonts'
 
 activate :livereload
 
-sprockets.append_path "bower_components/foundation/js"
-sprockets.append_path "bower_components/modernizr"
-sprockets.append_path "bower_components/jquery"
-sprockets.append_path "bower_components/masonry"
-
-# Add bower's directory to sprockets asset path
-# ready do
-#   sprockets.append_path File.join root, '/bower_components'
-# end
+sprockets.append_path File.join root, 'bower_components'
 
 # Build-specific configuration
 configure :build do
@@ -116,7 +109,6 @@ end
 page "/feed.xml", layout: false
 
 activate :directory_indexes
-# page /bower_components/*/, directory_index: false
 
 ###
 # Page options, layouts, aliases and proxies
