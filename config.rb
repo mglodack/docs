@@ -109,7 +109,6 @@ end
 page "/feed.xml", layout: false
 
 activate :directory_indexes
-# page /bower_components/*/, directory_index: false
 
 ###
 # Page options, layouts, aliases and proxies
