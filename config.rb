@@ -4,6 +4,7 @@
 
 compass_config do |config|
   # Require any additional compass plugins here.
+  # config.add_import_path File.join "#{root}", "bower_components/foundation/scss"
   config.add_import_path "bower_components/foundation/scss"
 
   # Set this to the root of your project when deployed:
@@ -33,19 +34,21 @@ end
 
 set :markdown, :layout_engine => :haml
 
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
+activate :livereload
+
 sprockets.append_path "bower_components/foundation/js"
 sprockets.append_path "bower_components/modernizr"
 sprockets.append_path "bower_components/jquery"
 sprockets.append_path "bower_components/masonry"
 
-
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
-
-activate :livereload
+# Add bower's directory to sprockets asset path
+# ready do
+#   sprockets.append_path File.join root, '/bower_components'
+# end
 
 # Build-specific configuration
 configure :build do
@@ -113,6 +116,7 @@ end
 page "/feed.xml", layout: false
 
 activate :directory_indexes
+# page /bower_components/*/, directory_index: false
 
 ###
 # Page options, layouts, aliases and proxies
