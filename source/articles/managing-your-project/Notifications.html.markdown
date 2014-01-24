@@ -1,7 +1,7 @@
 ---
 title: Notification Setup
-tags: notifications
-category: Configure Build and Test Environment
+tags: notifications, hipchat, campfire, flowdock, grove.io
+category: Managing your project
 ---
 
 ## Notifications
