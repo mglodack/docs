@@ -41,7 +41,7 @@ module CustomHelpers
       next if tree[i] == TAGLINK
       page_path = tree[0..i].join("/") + "/index.html"
       page = sitemap.find_resource_by_destination_path page_path
-      res << "#{link_to article_title(page), page}"
+      res << "#{link_to article_title(page), page}" unless page.nil?
     end
     return "<nav class='breadcrumbs'>" + res.join(" ") + "</nav>"
   end
