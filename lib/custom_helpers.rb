@@ -49,7 +49,7 @@ module CustomHelpers
   end
 
   def docs_link_to text, url
-    path = url
+    path = url.downcase
     if !url.include?("/index.html")
       path = url[url.size-1] == "/" ? url + "index.html" : url + "/index.html"
     end

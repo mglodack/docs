@@ -17,9 +17,13 @@
 
     .troubleshooting
       .index
-        %h4 I ran into some issues
+        %h4 I want to ...
         %ul.category-list
-          %li issue1
-          %li issue1
-          %li issue1
-          %li issue1
+          %li
+            = docs_link_to "Set custom Environment Variables", "/configure-build-and-test-environment/set-environment-variables/"
+          %li
+            = docs_link_to "Run a command in the background", "/configure-build-and-test-environment/run-a-command-in-the-background/"
+          %li
+            = docs_link_to "Skip a build", "/configure-build-and-test-environment/skipping-builds/"
+          %li
+            = docs_link_to "Transfer a project to a team member", "/managing-your-project/transfer-project-to-new-owner/"
