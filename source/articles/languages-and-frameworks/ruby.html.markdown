@@ -8,27 +8,44 @@ category: Languages and Frameworks
 
 We use RVM to manage different Ruby versions. We set <strong>1.9.3-p327</strong> as the default version. Currently we do not load the Ruby version from your Gemfile. You can always change the Ruby version by running:
 
-    rvm use RUBY_VERSION_YOU_WANT_TO_USE
+~~~
+rvm use RUBY_VERSION_YOU_WANT_TO_USE
+~~~
 
 The following Ruby versions are preinstalled
 
 ### JRuby
-    jruby-1.7.4, jruby-1.7.5
+```
+jruby-1.7.4, jruby-1.7.5
+```
 
 ### Ruby 1.8.7
-    ruby-1.8.7-p374
+```
+ruby-1.8.7-p374
+```
 
 ### Ruby 1.9.2
-    ruby-1.9.2-p320
+```
+ruby-1.9.2-p320
+```
 
 ### Ruby 1.9.3
-    ruby-1.9.3-p194, ruby-1.9.3-p286, ruby-1.9.3-p327, ruby-1.9.3-p362, ruby-1.9.3-p374, ruby-1.9.3-p392, ruby-1.9.3-p429, ruby-1.9.3-p448
+```
+ruby-1.9.3-p194, ruby-1.9.3-p286, ruby-1.9.3-p327, ruby-1.9.3-p362, ruby-1.-p374, ruby-1.9.3-p392, ruby-1.9.3-p429, ruby-1.9.3-p448
+```
 
 ### Ruby 2.0.0
-    ruby-2.0.0-p0, ruby-2.0.0-p195, ruby-2.0.0-p247
+```
+ruby-2.0.0-p0, ruby-2.0.0-p195, ruby-2.0.0-p247
+```
+
+### Ruby 2.1.0
+```
+ruby-2.1.0
+```
 
 ### Setting the Ruby version through a .ruby-version file
-You can also use your .ruby-version file on the Codeship. The .ruby-version file lives in the project root and its content is just your Ruby version, for example: ***2.0.0-p195***. You can just read the ruby version to use from that file:
+You can also use your .ruby-version file on the Codeship. The .ruby-version file lives in the project root and its content is just your Ruby version, for example: ```2.0.0-p195```. You can just read the ruby version to use from that file:
     rvm use $(cat .ruby-version)
 One use case is that you can change your Ruby version for different branches.
 

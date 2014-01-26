@@ -1,7 +1,8 @@
 ---
 title: Deploying to Digital Ocean
-tags: continuous deployment
-category: Deployment
+tags: deployment
+category: Continuous Deployment
+published: false
 ---
 
 # Deploying to Digital Ocean

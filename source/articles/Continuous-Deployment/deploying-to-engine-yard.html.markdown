@@ -1,7 +1,8 @@
 ---
 title: Deploying to Engine Yard
-tags: continuous deployment
-category: Deployment
+tags: deployment
+category: Continuous Deployment
+published: false
 ---
 
 # Deploying to Engine Yard

@@ -26,7 +26,9 @@ module CustomHelpers
     category_container << link_to(category, category_path(category), class: :title)
 
     sitemap.where(category: category).all.each_with_index do |article, i|
-      category_pages << "<li>#{link_to article_title(article), article}</li>"
+      if article.published?
+        category_pages << "<li>#{link_to article_title(article), article}</li>"
+      end
     end
 
     category_container << "<ul class='category-list'>" + category_pages.join(" ") + "</ul>"

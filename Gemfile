@@ -10,6 +10,11 @@ gem "middleman-livereload", "~> 3.1.0"
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
+# code highlighting
+gem "middleman-syntax"
+gem 'redcarpet'
+
+# helps to use for categories and tags
 gem "middleman-blog", :github => "codeship/middleman-blog"
 
 gem "pry"

@@ -1,7 +1,8 @@
 ---
 title: Deploying to CloudFoundry
-tags: continuous deployment
-category: Deployment
+tags: deployment
+category: Continuous Deployment
+published: false
 ---
 
 # Deploying to CloudFoundry

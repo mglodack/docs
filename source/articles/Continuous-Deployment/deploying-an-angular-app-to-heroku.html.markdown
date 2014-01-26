@@ -1,7 +1,8 @@
 ---
 title: Deploying an angular app to Heroku
-tags: continuous deployment
-category: Deployment
+tags: deployment
+category: Continuous Deployment
+published: false
 ---
 
 # Deploying an angular app to Heroku

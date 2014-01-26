@@ -1,6 +1,6 @@
 ---
 title: Where can I find the SSH Public Key for my project?
-tags: testing
+tags: project settings, ssh key
 category: Configure Build and Test Environment
 ---
 

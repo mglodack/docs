@@ -32,7 +32,11 @@ compass_config do |config|
 
 end
 
-set :markdown, :layout_engine => :haml
+set :markdown, layout_engine: :haml, fenced_code_blocks: true, smartypants: true
+# we need kramdown for defining options in links
+set :markdown_engine, :kramdown
+
+activate :syntax
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -109,6 +113,7 @@ end
 page "/feed.xml", layout: false
 
 activate :directory_indexes
+
 
 ###
 # Page options, layouts, aliases and proxies

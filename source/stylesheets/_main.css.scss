@@ -112,6 +112,14 @@
     a:hover {
         color: $anchor-font-color-hover;
     }
+
+    li {
+        border-bottom: 1px solid darken($panel-bg, 5%);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
 }
 
 .info {
