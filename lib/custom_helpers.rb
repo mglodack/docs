@@ -47,4 +47,18 @@ module CustomHelpers
     end
     return "<nav class='breadcrumbs'>" + res.join(" ") + "</nav>"
   end
+
+  def docs_link_to text, url
+    path = url
+    if !url.include?("/index.html")
+      path = url[url.size-1] == "/" ? url + "index.html" : url + "/index.html"
+    end
+
+    page_path = sitemap.find_resource_by_destination_path(path)
+    if page_path.nil?
+      return text
+    else
+      return link_to text, page_path
+    end
+  end
 end
