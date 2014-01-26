@@ -6,8 +6,12 @@
       .index
         %h4 Getting Started
         %ul.category-list
-          %li Languages
-          %li Databases
+          %li
+            = link_to "Tutorials", category_path("Tutorials")
+          %li
+            %a{href: "languages-and-frameworks"}Languages
+          %li
+            %a{href: "databases-and-queues"}Datastores
           %li Setting up your tests
           %li Setting up your deployments
 
