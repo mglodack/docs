@@ -14,5 +14,9 @@ Dir.glob("build/documentation/**/*.html") do |html_file|
       end
     end
   end
-  abort("link errors in documentation") if errors_count > 0
+
+  if errors_count > 0
+    puts "#{errors_count} link errors in documentation"
+    exit 1
+  end
 end
