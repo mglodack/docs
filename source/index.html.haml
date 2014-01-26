@@ -9,10 +9,9 @@
           %li
             = link_to "Tutorials", category_path("Tutorials")
           %li
-            %a{href: "languages-and-frameworks"}Languages
+            = link_to "Languages", category_path("languages-and-frameworks")
           %li
-            %a{href: "databases-and-queues"}Datastores
-          %li Setting up your tests
+            = link_to "Datastores", category_path("databases-and-queues")
           %li Setting up your deployments
 
     .troubleshooting
