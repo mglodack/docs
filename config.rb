@@ -1,10 +1,10 @@
+# we need kramdown for defining options in links
 set :markdown,
   layout_engine: :haml,
   fenced_code_blocks: true,
   smartypants: true,
   autolink: true,
-  :with_toc_data => true
-# we need kramdown for defining options in links
+  with_toc_data: true
 set :markdown_engine, :kramdown
 
 activate :syntax
@@ -123,6 +123,7 @@ activate :directory_indexes
 #     "Helping"
 #   end
 # end
+
 
 require "lib/custom_helpers"
 helpers CustomHelpers
