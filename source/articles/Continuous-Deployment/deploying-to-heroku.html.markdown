@@ -6,10 +6,12 @@ category: Continuous Deployment
 
 # Deploying to Heroku
 
++ [Settings](#settings)
 + [Run migration after the app is deployed](#migration)
 + [Troubleshooting](#troubleshooting)
 + [Related Content](#related-content)
 
+## [Settings](#settings){:name="settings"}
 Within Codeship you are able to configure [Deployment Pipelines](/continuous-deployment/create-deployment-pipelines/). You can easily add a Heroku Deployment choosing Heroku as deployment method.
 
 You are asked to enter the **name of your Heroku application** and your **API key** you get from Heroku. You need to create the application on Heroku first.

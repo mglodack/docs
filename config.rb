@@ -7,7 +7,7 @@ compass_config do |config|
   # config.add_import_path File.join "#{root}", "bower_components/foundation/scss"
 
   # Set this to the root of your project when deployed:
-  config.http_path = "/"
+  config.http_path = "/documentation"
   config.css_dir = "stylesheets"
   config.sass_dir = "stylesheets"
   config.images_dir = "images"
