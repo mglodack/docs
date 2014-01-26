@@ -5,6 +5,7 @@ Dir.glob("build/documentation/**/*.html") do |html_file|
     line_counter = 0
     while (line = infile.gets)
       line_counter = line_counter + 1
+
       parts = line.scan(/<a.*href="\/.*".*>.*<\/a>/i)
       next if parts.nil?
       parts.each do |part|
