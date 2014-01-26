@@ -12,7 +12,9 @@ category: Continuous Deployment
 + [Related Content](#related-content)
 
 ## [Settings](#settings){:name="settings"}
-Within Codeship you are able to configure [Deployment Pipelines](/continuous-deployment/create-deployment-pipelines/index.html). You can easily add a Heroku Deployment choosing Heroku as deployment method.
+Within Codeship you are able to configure
+= link_to "sdf" "/continuous-deployment/create-deployment-pipelines/"
+. You can easily add a Heroku Deployment choosing Heroku as deployment method.
 
 You are asked to enter the **name of your Heroku application** and your **API key** you get from Heroku. You need to create the application on Heroku first.
 
@@ -25,7 +27,7 @@ We are checking after each deployment if your app is up. Therefore we call (wget
 If this url requires basic out please enter: ```http://USERNAME:PASSWORD@YOUR_URL```
 
 ## [Run migration after the app is deployed](#migration){:name="migration"}
-You can either specify within the more options section to run the migration during the Heroku deployment. If you want to run your migration after the deployment you can add a [Script Deployment](/deployment/deploying-with-your-own-script/index.html) below the Heroku deployment and run the migration there.
+You can either specify within the more options section to run the migration during the Heroku deployment. If you want to run your migration after the deployment you can add a [Script Deployment](/deployment/deploying-with-your-own-script/) below the Heroku deployment and run the migration there.
 
 ~~~shell
 heroku_run bundle exec rake db:migrate my_herokuapp_name

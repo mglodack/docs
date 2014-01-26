@@ -1,4 +1,9 @@
-set :markdown, layout_engine: :haml, fenced_code_blocks: true, smartypants: true
+set :markdown,
+  layout_engine: :haml,
+  fenced_code_blocks: true,
+  smartypants: true,
+  autolink: true,
+  :with_toc_data => true
 # we need kramdown for defining options in links
 set :markdown_engine, :kramdown
 
