@@ -11,6 +11,7 @@ Dir.glob("build/documentation/**/*.html") do |html_file|
         if !part.include? "documentation"
           puts "\e[0;31mlink error\e[m\n"
           puts "\e[0;33m#{html_file}:#{line_counter}\e[m => " + part[1..part.length-2]
+          puts "\n"
           errors_count = errors_count + 1
         end
       end
