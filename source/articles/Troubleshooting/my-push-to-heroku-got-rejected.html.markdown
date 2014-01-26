@@ -8,7 +8,7 @@ category: Troubleshooting
 
 In case your deployment to Heroku fails with an error message similar to this:
 
-~~~
+~~~shell
 Fetching repository, done.
 To git@heroku.com:my-project.git
  ! [rejected]        12a898d34f0be4df6231e76aa767001f0396bd9 -> master (fetch first)

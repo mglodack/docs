@@ -1,5 +1,6 @@
 ---
 title: Delete a project
+tags: project settings
 category: Managing your project
 ---
 

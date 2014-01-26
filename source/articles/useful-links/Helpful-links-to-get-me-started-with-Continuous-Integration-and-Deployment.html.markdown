@@ -1,5 +1,6 @@
 ---
 title: Helpful links to get me started with Continuous Integration and Deployment
+tags: continuous integration, deployment, testing
 category: Useful Links
 ---
 

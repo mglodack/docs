@@ -1,6 +1,6 @@
 ---
 title: Notification Setup
-tags: notifications, hipchat, campfire, flowdock, grove.io
+tags: notifications, hipchat, campfire, flowdock, grove.io, project settings
 category: Managing your project
 ---
 

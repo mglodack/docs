@@ -1,6 +1,6 @@
 ---
 title: Access to other repositories fails during the build
-tags: build error, ssh key
+tags: build error, ssh key, github, bitbucket
 category: Troubleshooting
 ---
 
@@ -14,13 +14,15 @@ An ssh key can only be added once to Github or Bitbucket, so make sure you remov
 
 **Typical error messages are:**
 
-~~~
+~~~shell
 remote: Repository not found
 ~~~
-~~~
+
+~~~shell
 fatal: Could not read from remote repository
 ~~~
-~~~
+
+~~~shell
 Permission denied (publickey).
 ~~~
 

@@ -1,6 +1,6 @@
 ---
 title: Pending step in cucumber fails build?
-tags: build error
+tags: build error, ruby
 category: Troubleshooting
 ---
 

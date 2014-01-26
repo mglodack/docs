@@ -1,6 +1,6 @@
 ---
 title: Can't find gems to install them
-tags: build error
+tags: build error, ruby
 category: Troubleshooting
 ---
 
@@ -9,7 +9,7 @@ category: Troubleshooting
 Sometimes you might see errors like the following.
 For example:
 
-~~~
+~~~shell
 Could not find safe_yaml-0.9.2 in any of the sources
 ~~~
 

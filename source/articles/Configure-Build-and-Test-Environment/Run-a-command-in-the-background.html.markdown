@@ -1,6 +1,6 @@
 ---
 title: Run a command in the background
-tags: testing
+tags: testing, faq
 category: Configure Build and Test Environment
 ---
 

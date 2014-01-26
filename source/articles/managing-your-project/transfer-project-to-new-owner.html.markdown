@@ -1,5 +1,6 @@
 ---
 title: Transfer a project to a team member
+tags: project settings
 category: Managing your project
 ---
 
