@@ -6,6 +6,6 @@ category: Configure Build and Test Environment
 
 # Where can I find the SSH Public Key for my project?
 
-Go to the project navigation on top of the page. There click the settings icon for the project you want to get the SSH key for.
+Open the project navigation on top of the page. Click on the settings icon next to the respective project.
 
-In the project settings go to the **General** tab. There you will find your SSH public key.
+On the **General** page of your project settings you will find your SSH public key.

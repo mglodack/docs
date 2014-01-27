@@ -22,5 +22,5 @@ bundle exec rake my_rake_task
 # you can define your keys in the environment variables
 ~~~
 
-To get more concrete you can, for example, run a migration on Heroku after your deployment.
+To get more concrete you can, for example, run a migration on Heroku after your deployment:
 ![Migration after Heroku Deployment](deployment/script_deployment.png)

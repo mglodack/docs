@@ -6,13 +6,13 @@ category: Troubleshooting
 
 # check_url fails when deploying to Heroku
 
-We are checking after each deployment if your app is up. Therefore we call (wget) either the default *.herokuapps.com url or the url you specified here.
+After each deployment we check if your app is up. Therefore we call (````wget````) either the default ```*.herokuapps.com``` URL or the URL you specified here.
 
-If the build fails during ```check_url your_url``` that can have multiple reasons:
-+ Your app does not return 200 at your root path.
+If the build fails during ```check_url YOUR_URL``` it's usually because of these reasons:
++ Your app does not respond with HTTP status code 200 at your root path.
 + An application error occurred.
 
 ## Solutions
-+ Return *anything* (status 200) on your root path.
-+ Enter in the heroku deployment config any url, for example http>//google.com, that is always up.
++ Respond with *anything* (HTTP status code 200) on your root path.
++ Enter a URL that's supposed to be available all the time into the heroku deployment configuration, for example http://google.com.
 
