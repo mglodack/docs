@@ -17,6 +17,7 @@
 
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
+    = javascript_include_tag "mixpanel"
 
   %body#documentation.hide-extras
     .off-canvas-wrap
@@ -69,6 +70,14 @@
     = yield_content(:javascript)
 
     :javascript
+      mixpanel.register_once({ 'First Landed Page': document.URL });
+      mixpanel.people.set_once({
+          "First Seen": new Date().toUTCString(),
+          "First Landed Page": document.URL
+      });
+      mixpanel.track("documentation page viewed", {'title': document.title});
+
+    :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-21192046-1']);
       _gaq.push(['_setDomainName', 'codeship.io']);
@@ -77,4 +86,9 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
 
+    :javascript
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0014/8994.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
