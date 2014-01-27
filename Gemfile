@@ -18,3 +18,7 @@ gem 'redcarpet'
 gem "middleman-blog", :github => "codeship/middleman-blog"
 
 gem "pry"
+
+group :test do
+  gem "nokogiri"
+end
