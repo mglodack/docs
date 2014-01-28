@@ -58,9 +58,11 @@
           ~ yield
 
           %footer.info
-            %a{href: "https://www.codeship.io/"} Back to Codeship
-            %a{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
-            %span support@codeship.io
+            %a.back-to-codeship{href: "https://www.codeship.io/"} Back to Codeship
+            |
+            %a.report-issue{href: "https://github.com/codeship/docs/issues", target: :blank}Report issue
+            |
+            %span.contact support@codeship.io
 
         %a.exit-off-canvas
 
