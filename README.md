@@ -16,11 +16,13 @@ when in Vagrant as the NFS share doesn't play well with detecting changes in mid
 
 ***Tabs*** in the project configuration are referred to as: ***General*** page, ***Environment*** page.
 
-***Code*** that's supposed to be entered somewhere by the user is written like
+***Code*** that's supposed to be entered somewhere by the user is written like.
 
 ~~~shell
 bundle
 ~~~
+
+```--skip-ci``` use skip-ci within ``` to make the double dash visible.
 
 whereas code chunks like configuration values should be written inline like ```ruby-2.0.0```. Placeholder values are capitalized and should start with ```YOUR_``` if appropriate, like ```YOUR_API_KEY```.
 
