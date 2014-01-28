@@ -12,7 +12,7 @@ module CustomHelpers
   end
 
   def category_to_title category
-    category.gsub(/[-_]/, ' ')
+    category.gsub(/[-_]/, ' ').capitalize
   end
 
   def to_id string
