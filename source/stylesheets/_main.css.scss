@@ -101,13 +101,15 @@
 
 .category-list {
     @include side-nav;
-    line-height: 1.2em;
+    font-size: 0.8em;
+    line-height: 1.4em;
 
     a:hover {
         color: $anchor-font-color-hover;
     }
 
     li {
+        padding-bottom: 0.5rem;
         border-bottom: 1px solid darken($panel-bg, 5%);
 
         &:last-child {
@@ -127,7 +129,13 @@
     .getting-started,
     .troubleshooting {
         @include box-sizing(border-box);
-        @include grid-column(6);
+        @media #{$medium-up} {
+            @include grid-column(6);
+        }
+        @media #{$small-only} {
+            @include grid-column(12);
+            margin-bottom: 1rem;
+        }
         padding: 0 5px;
 
         .index {
