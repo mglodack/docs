@@ -43,7 +43,7 @@
             = list_item_for_category 'Useful Links'
 
         %section.main-section{role: "main"}
-          %h4= link_to "Documentation", "/index.html", class: :codeship
+          %h3= link_to "Documentation", "/index.html", class: :codeship
           = partial 'swiftype'
 
           - if current_page.data.include? 'tags'
