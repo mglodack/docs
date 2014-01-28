@@ -12,7 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>#{current_page.data.title} Codeship Documentation</title>
+    <title>#{(current_page.data.title || yield_content(:title)) + " -"} Codeship Documentation</title>
+    <meta name="st:title" content="#{current_page.data.title || yield_content(:title) || 'Codeship Documentation'}">
     <meta name="description" content="">
 
     = stylesheet_link_tag "app"
