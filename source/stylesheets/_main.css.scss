@@ -1,6 +1,6 @@
 @media #{$large-up} {
     .inner-wrap {
-        width: 64.063em;
+        width: lower-bound($large-range);
         margin: 0 auto;
     }
 
@@ -48,12 +48,6 @@
 
     .index-menu {
         @include left-off-canvas-menu;
-
-        // ul {
-        //     @include off-canvas-list;
-        // }
-
-
     }
 
     .main-section {
@@ -142,4 +136,8 @@
             padding: 0.5rem 1rem;
         }
     }
+}
+
+footer.info {
+
 }
