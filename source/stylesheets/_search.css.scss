@@ -1,5 +1,6 @@
 input[type="text"].searchfield {
   @include grid-column($columns:12);
   @include border-radius(0);
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
+  height: 2rem;
 }
