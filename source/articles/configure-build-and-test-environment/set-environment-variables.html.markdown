@@ -1,30 +1,32 @@
 ---
-title: Set Environment Variables
+title: Setting Environment Variables
 tags: testing
 category: Configure Build and Test Environment
 ---
 
-## Set Environment Variables
+## Setting Environment Variables
 
-If you set an environment variable it will stay for the whole build. You can set your Environment Variables in two different ways.
+If you set environment variables, they will be available for the whole build. You can set your environment variables in two different ways:
 
-### Set in project settings
-Go to your project settings and there to the Environment settings. There you can enter one environment variable per line:
+### Project Settings
+On the ***Environment*** page of your project settings you can enter one environment variable per line:
 
 ~~~
 APP_ENV=production
+MY_SECRET=iamsuperman
 ~~~
 
-We will take this setting and export the environment variable to the shell your build runs in with the following command:
+We will export these environment variables to the environment your build runs in:
 
 ~~~
 export APP_ENV=production
+export MY_SECRET=iamsuperman
 ~~~
 
-We run the export commands as the first step of your build. This is a pure convenience for setting up the environment but completely equal to export the environment variables yourself
+We export your environment variables before all other commands of your build. This is pure convenience for setting up the environment but completely equal to exporting environment variables yourself.
 
-### Export directly in setup or test commands
-You can run the export command yourself as well in your setup or test commands. So for example you could have the following in your setup commands:
+### Directly in Setup or Test Commands
+You can also export environment variables in your setup or test commands. So, for example, you could enter the following setup commands:
 
 ~~~
 rvm use 2.0.0
@@ -32,19 +34,19 @@ export RAILS_ENV=test
 bundle install
 ~~~
 
-There is no difference in setting ***RAILS_ENV*** like this or adding it to the Environment config of your project settings. The advantage of putting it into the environment tab is that secret values will not be stored as part of your build log.
+There is no difference between setting ***RAILS_ENV*** like this and adding it on the ***Environment*** page of your project settings. The advantage of putting it into the environment configuration is that secret values will show up in your build log.
 
 ###Default Environment Variables
-The following environment variables are exported automatically. You can use those to build your own scripts, run specific commands only if you are on a specific branch or even add flags to your ***CI_MESSAGE*** and use those flags to influence your build.
+The following environment variables are exported automatically. You can use them to build your own scripts, run specific commands only if you are on a specific branch or even add flags to your ***CI_MESSAGE*** and use those flags to influence your build.
 
 | Name                        | Value                                              |
 | ----------------------------|:--------------------------------------------------:|
 | CI                          |  true                                              |
 | CI_BUILD_NUMBER             |  ID of the build in our service                    |
-| CI_BUILD_URL                |  URL to that build                                 |
+| CI_BUILD_URL                |  URL of the build                                  |
 | CI_PULL_REQUEST             |  false                                             |
-| CI_BRANCH                   |  Branch of this build                              |
-|  CI_COMMIT_ID               |  Commit Hash of the build                          |
+| CI_BRANCH                   |  Branch of the build                               |
+| CI_COMMIT_ID                |  Commit Hash of the build                          |
 | CI_COMMITTER_NAME           |  Name of the committer                             |
 | CI_COMMITTER_EMAIL          |  Email of the committer                            |
 | CI_COMMITTER_USERNAME       |  Username of the commiter in their SCM service     |
