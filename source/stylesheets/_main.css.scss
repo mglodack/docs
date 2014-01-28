@@ -76,6 +76,10 @@
     }
 }
 
+.breadcrumbs {
+    margin-bottom: 1.5rem;
+}
+
 .main-section {
     background: $main-section-bg;
     padding-top: 1rem;
@@ -151,4 +155,5 @@
 
 footer.info {
     font-size: 0.8em;
+    margin-bottom: 2rem;
 }
