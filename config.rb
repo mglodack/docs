@@ -35,7 +35,7 @@ configure :build do
   # Gzip files
   activate :gzip
 
-  activate :asset_host, host: 'http://docs.codeship.io.s3-website-us-east-1.amazonaws.com/'
+  activate :asset_host, host: 'https://d1hmmog0ddn2l5.cloudfront.net'
 
   set :build_dir, 'build/documentation'
 end
