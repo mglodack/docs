@@ -1,3 +1,5 @@
 # robotstxt.org/
 
+Sitemap: https://www.codeship.io/documentation/sitemap.xml
+
 User-agent: *
