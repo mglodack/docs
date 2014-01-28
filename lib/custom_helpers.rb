@@ -19,6 +19,14 @@ module CustomHelpers
     string.gsub(/[-_]/, '_').downcase
   end
 
+  def page_title title
+    if title
+      "#{title} - Codeship Documentation"
+    else
+      "Codeship Documentation"
+    end
+  end
+
   def list_item_for_category category
     category_container = Array.new
     category_pages = Array.new
