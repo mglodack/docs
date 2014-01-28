@@ -60,6 +60,9 @@
 
 .index-menu {
     .codeship {
+        @media #{$medium-down} {
+            display: none;
+        }
         margin-top: 0.2rem;
         margin-bottom: 0.5rem;
         line-height: 1.4;
