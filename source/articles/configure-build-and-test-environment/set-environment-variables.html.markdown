@@ -4,11 +4,11 @@ tags: testing
 category: Configure Build and Test Environment
 ---
 
-## Setting Environment Variables
+# Setting Environment Variables
 
 If you set environment variables, they will be available for the whole build. You can set your environment variables in two different ways:
 
-### Project Settings
+## Environment Page on Project Settings
 On the ***Environment*** page of your project settings you can enter one environment variable per line:
 
 ~~~
@@ -25,7 +25,7 @@ export MY_SECRET=iamsuperman
 
 We export your environment variables before all other commands of your build. This is pure convenience for setting up the environment but completely equal to exporting environment variables yourself.
 
-### Directly in Setup or Test Commands
+## Directly in Setup or Test Commands
 You can also export environment variables in your setup or test commands. So, for example, you could enter the following setup commands:
 
 ~~~
