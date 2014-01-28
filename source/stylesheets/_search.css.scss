@@ -1,22 +1,5 @@
-// .searchform {
-//   @include border-radius;
-//   background: $highlight-bg;
-//   padding: 1rem 1rem 0 1rem;
-
-//   &:hover {
-//     background: $highlight-hover-bg;
-//   }
-// }
-
-.search {
-  @include prefix-postfix-base();
-  border: none;
-  @include grid-column(
-    $columns:3,
-    $float:left
-  );
-}
-
 input[type="text"].searchfield {
-  @include grid-column($columns:9);
+  @include grid-column($columns:12);
+  @include border-radius(0);
+  padding: 1rem 2rem;
 }
