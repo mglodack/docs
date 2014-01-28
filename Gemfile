@@ -13,6 +13,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # code highlighting
 gem "middleman-syntax"
 gem 'redcarpet'
+gem "builder"
 
 # helps to use for categories and tags
 gem "middleman-blog", :github => "codeship/middleman-blog"

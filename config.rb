@@ -1,3 +1,5 @@
+require 'builder'
+
 # we need kramdown for defining options in links
 set :markdown,
   layout_engine: :haml,
@@ -81,7 +83,7 @@ activate :blog do |blog|
   }
 end
 
-page "/feed.xml", layout: false
+page "/sitemap.xml", layout: false
 
 activate :directory_indexes
 
