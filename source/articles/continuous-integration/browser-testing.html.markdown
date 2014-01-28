@@ -1,7 +1,7 @@
 ---
 title: Browser Testing
 tags: testing
-category: Configure Build and Test Environment
+category: Continuous Integration
 ---
 
 # Browser Testing

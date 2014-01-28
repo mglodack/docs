@@ -1,10 +1,10 @@
 ---
-title: Helpful links to get me started with Continuous Integration and Deployment
+title: Get started with Continuous Integration and Continuous Deployment
 tags: continuous integration, deployment, testing
-category: Useful Links
+category: Links
 ---
 
-# Helpful links to get me started with Continuous Integration and Deployment
+# Get started with Continuous Integration and Continuous Deployment
 
 * [Introduction to Continuous Integration by Martin Fowler](http://martinfowler.com/articles/continuousIntegration.html)
 * [Why Continuous Deployment by Eric Ries](http://www.startuplessonslearned.com/2009/06/why-continuous-deployment.html)

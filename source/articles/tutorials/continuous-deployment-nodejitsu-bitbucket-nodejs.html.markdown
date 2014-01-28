@@ -1,10 +1,10 @@
 ---
-title: How to test and deploy a node.js app from Bitbucket to nodejitsu
+title: Continuous Deployment for node.js apps from Bitbucket to Nodejitsu
 tags: continuous integration, deployment, tutorials, bitbucket, nodejs
 category: Tutorials
 ---
 
-# How to test and deploy a node.js app from Bitbucket to nodejitsu
+# Continuous Deployment for node.js apps from Bitbucket to Nodejitsu
 
 <div class="flex-video">
 <iframe src="http://player.vimeo.com/video/77595720" allowfullscreen="" frameborder="0"></iframe>

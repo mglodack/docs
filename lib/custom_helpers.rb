@@ -37,7 +37,7 @@ module CustomHelpers
 
   def breadcrumbs
     res=Array.new
-    res << "#{link_to "index", "/index.html"}"
+    res << "#{link_to "Documentation", "/index.html"}"
     tree = current_page.request_path.gsub(/index\.html/, "").split("/")
     for i in 0..(tree.length - 1)
       next if tree[i] == TAGLINK
