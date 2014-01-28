@@ -1,10 +1,10 @@
 ---
-title: How to test and deploy a Django app from GitHub to Google App Engine
+title: Continuous Deployment for Django apps from GitHub to Google App Engine
 tags: continuous integration, deployment, tutorials, github, google app engine, python
 category: Tutorials
 ---
 
-# How to test and deploy a Django app from GitHub to Google App Engine
+# Continuous Deployment for Django apps from GitHub to Google App Engine
 
 <div class="flex-video">
 <iframe src="http://player.vimeo.com/video/84305070" allowfullscreen="" frameborder="0"></iframe>

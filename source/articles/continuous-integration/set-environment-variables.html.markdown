@@ -1,7 +1,7 @@
 ---
 title: Setting Environment Variables
 tags: testing
-category: Configure Build and Test Environment
+category: Continuous Integration
 ---
 
 # Setting Environment Variables

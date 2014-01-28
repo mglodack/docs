@@ -9,11 +9,14 @@
           %li
             = link_to "Tutorials", category_path("Tutorials")
           %li
+            = link_to "Continuous Integration", category_path("continuous-integration")
+          %li
+            = link_to "Continuous Deployment", category_path("continuous-deployment")
+          %li
             = link_to "Languages", category_path("languages-and-frameworks")
           %li
             = link_to "Datastores", category_path("databases-and-queues")
-          %li
-            = link_to "Continuous Deployment", category_path("continuous-deployment")
+
 
     .troubleshooting
       .index
@@ -22,10 +25,10 @@
           %li
             = link_to "Check out the FAQ", tag_path("faq/")
           %li
-            = docs_link_to "Set custom Environment Variables", "/configure-build-and-test-environment/set-environment-variables/"
+            = docs_link_to "Set custom Environment Variables", "/continuous-integration/set-environment-variables/"
           %li
-            = docs_link_to "Run a command in the background", "/configure-build-and-test-environment/run-a-command-in-the-background/"
+            = docs_link_to "Run a command in the background", "/continuous-integration/run-a-command-in-the-background/"
           %li
-            = docs_link_to "Skip a build", "/configure-build-and-test-environment/skipping-builds/"
+            = docs_link_to "Skip a build", "/continuous-integration/skipping-builds/"
           %li
             = docs_link_to "Transfer a project to a team member", "/managing-your-project/transfer-project-to-new-owner/"

@@ -1,7 +1,7 @@
 ---
 title: Skipping builds
 tags: testing, faq
-category: Configure Build and Test Environment
+category: Continuous Integration
 ---
 
 # Skipping builds

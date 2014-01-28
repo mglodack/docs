@@ -1,10 +1,10 @@
 ---
-title: How to test and deploy a Rails app from Github to Heroku
+title: Continuous Deployment for Rails apps from Github to Heroku
 tags: continuous integration, deployment, github, heroku, ruby
 category: Tutorials
 ---
 
-# How to test and deploy a Rails app from Github to Heroku
+# Continuous Deployment for Rails apps from Github to Heroku
 
 <div class="flex-video">
 <iframe src="http://player.vimeo.com/video/75497977" allowfullscreen="" frameborder="0"></iframe>

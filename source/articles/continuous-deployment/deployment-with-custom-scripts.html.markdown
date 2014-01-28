@@ -1,10 +1,10 @@
 ---
-title: Deploying with your own Script
+title: Continuous Deployment with Custom Scripts
 tags: deployment
 category: Continuous Deployment
 ---
 
-# Deploying with your own Script
+# Continuous Deployment with Custom Scripts
 
 Script deployment is useful to define your custom deployment commands or execute another task after or prior a deployment.
 

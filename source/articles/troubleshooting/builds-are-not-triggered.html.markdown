@@ -1,12 +1,12 @@
 ---
-title: My builds do not run anymore
+title: My builds are not triggered anymore
 tags: build error, github, bitbucket
 category: Troubleshooting
 ---
 
-# My builds do not run anymore
+# My builds are not triggered anymore
 
-In general a build gets trigger on Codeship on each push to your remote repository. Hence there needs to be a hook set up at your repository provider (GitHub, Bitbucket).
+In general a build is triggered on Codeship on each push to your remote repository. Hence there needs to be a hook set up at your repository provider (GitHub, Bitbucket).
 
 ## Issues with the hook in your repository
 + Please check if the Codeship hook is configured and active for your repository on GitHub / Bitbucket.

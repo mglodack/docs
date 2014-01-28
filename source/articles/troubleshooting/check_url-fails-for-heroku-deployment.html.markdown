@@ -1,10 +1,10 @@
 ---
-title: check_url fails when deploying to Heroku
+title: check_url fails for Heroku deployment
 tags: build error, heroku
 category: Troubleshooting
 ---
 
-# check_url fails when deploying to Heroku
+# check_url fails for Heroku deployment
 
 After each deployment we check if your app is up. Therefore we call (````wget````) either the default ```*.herokuapps.com``` URL or the URL you specified here.
 

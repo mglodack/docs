@@ -1,7 +1,7 @@
 ---
 title: Run a command in the background
 tags: testing, faq
-category: Configure Build and Test Environment
+category: Continuous Integration
 ---
 
 # Run a command in the background
