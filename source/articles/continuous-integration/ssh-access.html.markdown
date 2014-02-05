@@ -15,6 +15,8 @@ category: Continuous Integration
 + [Get my public SSH Key](#ssh-key)
 + [Generate my SSH Key](#generate-ssh-key)
 
+You are able to activate build debugging at the bottom of the build detail view. (It only works for branches still available in your repository)
+
 ## [Codeship Command](#codeship-command){:name="codeship-command"}
 
 Inside the SSH session, you have access to the Codeship command. It provides some convient methods to debug your project.
@@ -87,7 +89,6 @@ You can retrieve your public SSH Key by using the following command in your Term
 ~~~shell
 cat ~/.ssh/id_rsa.pub
 ~~~
-
 
 ## [Generate my SSH Key](#generate-ssh-key){:name="generate-ssh-key"}
 
