@@ -12,6 +12,8 @@ category: Continuous Integration
 + [NodeJS version](#nodejs-version)
 + [Timeout](#timeout)
 + [Clear Dependency Cache](#clear-dependency-cache)
++ [Get my public SSH Key](#ssh-key)
++ [Generate my SSH Key](#generate-ssh-key)
 
 ## [Codeship Command](#codeship-command){:name="codeship-command"}
 
@@ -76,4 +78,21 @@ If you want to start really fresh, you can clear the Dependency Cache by using
 
 ~~~shell
 cs clear-cache
+~~~
+
+## [Get my public SSH Key](#ssh-key){:name="ssh-key"}
+
+You can retrieve your public SSH Key by using the following command in your Terminal.
+
+~~~shell
+cat ~/.ssh/id_rsa.pub
+~~~
+
+
+## [Generate my SSH Key](#generate-ssh-key){:name="generate-ssh-key"}
+
+To generate your own SSH Key, open up your Terminal and use this command.
+
+~~~shell
+ssh-keygen -b 8192
 ~~~
