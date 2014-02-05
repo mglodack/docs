@@ -9,6 +9,9 @@ category: Databases and Queues
 + [Create Databases and run psql commands](#create-db)
 + [Enable Extensions](#extensions)
 + [PostGIS](#postgis)
++ [Ruby on Rails](#ruby-on-rails)
++ [Django](#django)
+
 
 The default databases created for you are **development** and **test**.
 
@@ -36,3 +39,22 @@ in your setup commands.
 
 ## [PostGIS](#postgis){:name="postgis"}
 PostGIS 2.0.x is installed on the virtual machine.
+
+## [Ruby on Rails](#ruby-on-rails){:name="ruby-on-rails"}
+
+We replace the values in your `database.yml` automatically.
+
+## [Django](#django){:name="django"}
+
+~~~python
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'test',
+    'USER': os.environ.get('PG_USER'),
+    'PASSWORD': os.environ.get('PG_PASSWORD'),
+    'HOST': '127.0.0.1',
+  }
+}
+~~~
+
