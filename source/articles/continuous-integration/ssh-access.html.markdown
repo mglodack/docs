@@ -7,11 +7,11 @@ category: Continuous Integration
 # SSH Access
 
 + [Codeship Command](#codeship-command)
-+ [Clear Dependency Cache](#clear-dependency-cache)
 + [Existing Directories](#existing-directories)
 + [Useful commands](#useful-commands)
-+ [Timeout](#timeout)
 + [NodeJS version](#nodejs-version)
++ [Timeout](#timeout)
++ [Clear Dependency Cache](#clear-dependency-cache)
 
 ## [Codeship Command](#codeship-command){:name="codeship-command"}
 
@@ -19,14 +19,6 @@ Inside the SSH session, you have access to the Codeship command. It provides som
 
 ~~~shell
 cs help
-~~~
-
-## [Clear Dependency Cache](#clear-dependency-cache){:name="clear-dependency-cache"}
-
-If you want to start really fresh, you can clear the Dependency Cache by using
-
-~~~shell
-cs clear-cache
 ~~~
 
 ## [Existing Directories](#existing-directories){:name="existing-directories"}
@@ -48,16 +40,6 @@ You can use `grep` to filter the Environment
 printenv | grep CI
 ~~~
 
-## [Timeout](#timeout){:name="timeout"}
-
-The debug build will shutdown itself after `60 minutes`
-
-You can shutdown the debug build manually by using
-
-~~~shell
-cs exit
-~~~
-
 ## [NodeJS version](#nodejs-version){:name="nodejs-version"}
 
 By default we set the NodeJS version to `0.10.22`
@@ -76,4 +58,22 @@ Use a different version of  NodeJS
 
 ~~~shell
 nvm use 0.10.22
+~~~
+
+## [Timeout](#timeout){:name="timeout"}
+
+The debug build will shutdown itself after `60 minutes`
+
+You can shutdown the debug build manually by using
+
+~~~shell
+cs exit
+~~~
+
+## [Clear Dependency Cache](#clear-dependency-cache){:name="clear-dependency-cache"}
+
+If you want to start really fresh, you can clear the Dependency Cache by using
+
+~~~shell
+cs clear-cache
 ~~~
