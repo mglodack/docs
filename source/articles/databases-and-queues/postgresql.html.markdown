@@ -42,7 +42,44 @@ PostGIS 2.0.x is installed on the virtual machine.
 
 ## [Ruby on Rails](#ruby-on-rails){:name="ruby-on-rails"}
 
-We replace the values in your `database.yml` automatically.
+We replace the values in your `config/database.yml` automatically.
+
+If you have your Rails application in a subdirectory or want to change
+it from our default values you can add the following to a codeship.database.yml
+(or any other filename) in your repository:
+
+~~~yaml
+development:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: 10
+  username: <%= ENV['PG_USER'] %>
+  template: template1
+  password: <%= ENV['PG_PASSWORD'] %>
+  database: development<%= ENV['TEST_ENV_NUMBER'] %>
+  port: 5432
+  sslmode: disable
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: 10
+  username: <%= ENV['PG_USER'] %>
+  template: template1
+  password: <%= ENV['PG_PASSWORD'] %>
+  database: test<%= ENV['TEST_ENV_NUMBER'] %>
+  port: 5432
+  sslmode: disable
+~~~
+
+Then in your setup commands run
+
+~~~shell
+cp codeship.database.yml YOUR_DATABASE_YAML_PATH
+~~~
+
+to copy the file wherever you need it.
 
 ## [Django](#django){:name="django"}
 
