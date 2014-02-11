@@ -17,6 +17,12 @@ For example
 phpenv local 5.5
 ~~~
 
+## PHP.ini
+
+You can access and change the php.ini file in ***/home/rof/.phpenv/versions/YOUR_PHP_VERSION/etc/php.ini***
+
+Make sure to change YOUR_PHP_VERSION to the one you set through phpenv or the default.
+
 ## Dependencies and Extensions
 
 You can install dependencies through pear and composer. Extensions can be installed through pecl. If you need any other tools please send us a message.
