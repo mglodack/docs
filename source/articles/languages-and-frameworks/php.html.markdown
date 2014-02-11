@@ -19,7 +19,11 @@ phpenv local 5.5
 
 ## PHP.ini
 
-You can access and change the php.ini file in ***/home/rof/.phpenv/versions/YOUR_PHP_VERSION/etc/php.ini***
+You can access and change the php.ini file in
+
+~~~shell
+/home/rof/.phpenv/versions/YOUR_PHP_VERSION/etc/php.ini
+~~~
 
 Make sure to change YOUR_PHP_VERSION to the one you set through phpenv or the default.
 
