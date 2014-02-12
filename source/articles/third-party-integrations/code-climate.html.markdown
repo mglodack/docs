@@ -1,0 +1,19 @@
+---
+title: Code Climate Integration
+tags: code coverage, integrations
+category: Third Party Integrations
+---
+
+# Setting up Code Climate
+
+There is no specific setup necessary to use Code Climate on Codeship.
+You can follow the [Code Climate docs](https://codeclimate.com/docs#test-coverage)
+set it up with your application and just include the Code Climate API key either
+in the environment settings or prefix your test commands with it as explained in their docs.
+
+For example execute your rake tests with the Code Climate token:
+
+~~~shell
+# After adding Code Climate to your application
+CODECLIMATE_REPO_TOKEN=ACDDD1111222223333 bundle exec rake
+~~~
