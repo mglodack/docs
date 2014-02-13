@@ -1,0 +1,34 @@
+---
+title: Dart
+tags: dart, languages
+category: Languages and Frameworks
+---
+
+# Dart
+
+```DART_SDK``` is available in the Environment and included in the PATH.
+
+You can use these commands from the Dart SDK:
+
+* Dart-to-JavaScript compiler (dart2js)
+* Dart VM (dart)
+* Dart package manager (pub)
+* Dart Analyzer (dart_analyzer)
+
+## Installing dependencies
+
+You can install any dependencies you defined in your pubspec.yaml by running
+
+~~~shell
+pub install
+~~~
+
+## Running tests
+
+As dart currently doesn't have a default way to run your tests you can use
+exactly the same command to run those tests as you would on your own system
+
+## Browser testing
+
+We automatically have xvfb running on our System. You can use Firefox, Chrome
+or PhantomJS to run your Dart tests in a browser.
