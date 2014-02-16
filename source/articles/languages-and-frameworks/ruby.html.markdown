@@ -18,7 +18,8 @@ The following Ruby versions are preinstalled
 1.7.4\\
 1.7.5\\
 1.7.6\\
-1.7.8
+1.7.8\\
+1.7.10
 
 ## MRI 1.8.7
 1.8.7-p374
