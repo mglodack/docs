@@ -23,7 +23,7 @@ it from our default values you can add the following to a codeship.database.yml
 
 ~~~yaml
 development:
-  adapter: mysql
+  adapter: mysql2
   host: localhost
   encoding: utf8
   pool: 10
@@ -32,7 +32,7 @@ development:
   database: development<%= ENV['TEST_ENV_NUMBER'] %>
   socket: /var/run/mysqld/mysqld.sock
 test:
-  adapter: mysql
+  adapter: mysql2
   host: localhost
   encoding: utf8
   pool: 10
