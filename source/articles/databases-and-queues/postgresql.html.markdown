@@ -81,6 +81,18 @@ cp codeship.database.yml YOUR_DATABASE_YAML_PATH
 
 to copy the file wherever you need it.
 
+If you don't use Rails and load the database.yml yourself you might see an error like the following:
+
+~~~shell
+PSQL::Error: Access denied for user '<%= ENV['PG_USER'] %>'@'localhost'
+~~~
+
+The database.yml example has ERB syntax in it so you need to load it by interpreting the ERB first:
+
+~~~ruby
+DATABASE_CONFIG = YAML.load(ERB.new(File.read("config/database.yml")).
+~~~
+
 ## [Django](#django){:name="django"}
 
 ~~~python
