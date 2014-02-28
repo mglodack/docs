@@ -46,7 +46,7 @@ printenv | grep CI
 
 ## [NodeJS version](#nodejs-version){:name="nodejs-version"}
 
-By default we set the NodeJS version to `0.10.22`
+By default we set the NodeJS version to `0.10.25`
 
 You can manage the NodeJS version via NVM.
 
@@ -58,10 +58,10 @@ nvm install 0.11
 
 or
 
-Use a different version of  NodeJS
+Use a different version of NodeJS
 
 ~~~shell
-nvm use 0.10.22
+nvm use 0.10.25
 ~~~
 
 ## [Timeout](#timeout){:name="timeout"}

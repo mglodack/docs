@@ -8,7 +8,7 @@ category: Languages and Frameworks
 We use **nvm** to manage different node versions. We read the node version you set in your **package.json** and install the appropriate one.
 
 ## Default Version
-The default version when we can't find a setting in your package.json is ```0.10.22```
+The default version when we can't find a setting in your package.json is ```0.10.25```
 
 ## Set it in Setup commands
 You can of course always set it directly through the setup commands by running
