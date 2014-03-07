@@ -19,7 +19,8 @@ The following Ruby versions are preinstalled
 1.7.5\\
 1.7.6\\
 1.7.8\\
-1.7.10
+1.7.10\\
+1.7.11
 
 ## MRI 1.8.7
 1.8.7-p374
@@ -36,16 +37,21 @@ The following Ruby versions are preinstalled
 1.9.3-p392\\
 1.9.3-p429\\
 1.9.3-p448\\
-1.9.3-p484
+1.9.3-p484\\
+1.9.3-p545
 
 ## MRI 2.0.0
 2.0.0-p0\\
 2.0.0-p195\\
 2.0.0-p247\\
-2.0.0-p353
+2.0.0-p353\\
+2.0.0-p451
 
 ## MRI 2.1.0
 2.1.0-p0
+
+## MRI 2.1.1
+2.1.1-p0
 
 ## Setting the Ruby version through a .ruby-version file
 You can also use your .ruby-version file on the Codeship. The .ruby-version file lives in the project root and its content is just your Ruby version, for example: ```2.0.0-p195```. You can just read the ruby version to use from that file:
