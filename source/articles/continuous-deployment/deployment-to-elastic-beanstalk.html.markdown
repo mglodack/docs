@@ -38,7 +38,7 @@ We would then advise you to add the following script (in this guide saved as ```
 export APP_VERSION=`git rev-parse --short HEAD`
 pip install awscli
 
-# clean build artefacts and create the application archive (also ignore any files named .git* in any folder)
+# clean build artifacts and create the application archive (also ignore any files named .git* in any folder)
 git clean -fd
 zip -x *.git* -r "${APP_NAME}-${APP_VERSION}.zip" * .*
 
