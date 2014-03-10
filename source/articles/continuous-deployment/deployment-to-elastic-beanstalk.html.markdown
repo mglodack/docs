@@ -32,6 +32,8 @@ S3_BUCKET="YOUR_S3_BUCKET_FOR_APPLICATION_DEPLOYMENT"
 
 We would then advise you to add the following script (in this guide saved as ```deploy_beanstalk.sh```) to your version control repository for the application you want to deploy. Feel free to adapt and modify to your specific needs.
 
+Keep in mind that the script resets the working copy to a pristine state. If you precompile assets, be sure to add a build step after the call to ```git clean```.
+
 ~~~shell
 #!/bin/sh
 
