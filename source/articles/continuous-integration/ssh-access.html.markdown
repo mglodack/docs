@@ -88,8 +88,6 @@ cs clear-cache
 SSH is a protocol which uses asymmetric key algorithms for authentication.
 If you want to dig deeper into Public-Key cryptography you can start by reading the [Wikipedia article](http://en.wikipedia.org/wiki/Public-key_cryptography).
 
-[Code Climate docs](https://codeclimate.com/docs#test-coverage)
-
 ## [Get my public SSH Key](#ssh-key){:name="ssh-key"}
 
 You can retrieve your public SSH Key by using the following command in your Terminal.
