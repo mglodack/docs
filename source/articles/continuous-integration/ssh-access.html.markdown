@@ -12,6 +12,7 @@ category: Continuous Integration
 + [NodeJS version](#nodejs-version)
 + [Timeout](#timeout)
 + [Clear Dependency Cache](#clear-dependency-cache)
++ [What is SSH public key?](#what-is-a-public-key)
 + [Get my public SSH Key](#ssh-key)
 + [Generate my SSH Key](#generate-ssh-key)
 
@@ -81,6 +82,11 @@ If you want to start really fresh, you can clear the Dependency Cache by using
 ~~~shell
 cs clear-cache
 ~~~
+
+## [What is SSH public key?](#what-is-a-public-key){:name="what-is-a-public-key"}
+
+SSH is a protocol which uses asymmetric key algorithms for authentication.
+If you want to dig deeper into Public-Key cryptography you can start by reading the [Wikipedia article](http://en.wikipedia.org/wiki/Public-key_cryptography).
 
 ## [Get my public SSH Key](#ssh-key){:name="ssh-key"}
 
