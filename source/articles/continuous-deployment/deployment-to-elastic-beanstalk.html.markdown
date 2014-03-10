@@ -57,4 +57,5 @@ Once you added the above script to your repository, you can activate it on the *
 
 ## [See also](#see-also){:name="see-also"}
 
-+ [Latest ```awscli``` documentation/](http://docs.aws.amazon.com/cli/latest/reference/)
++ [Latest ```awscli``` documentation](http://docs.aws.amazon.com/cli/latest/reference/)
++ [Latest Elastic Beanstalk documentation](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
