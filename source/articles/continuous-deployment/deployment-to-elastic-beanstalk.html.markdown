@@ -30,7 +30,7 @@ S3_BUCKET="YOUR_S3_BUCKET_FOR_APPLICATION_DEPLOYMENT"
 
 ## [Deploy Script](#deploy-script){:name="deploy-script"}
 
-We would then advise you to add the following script ( in this guide saved as ```deploy_beanstalk```) to your version control repository for the application you want to deploy. Feel free to adapt and modify to your specific needs.
+We would then advise you to add the following script (in this guide saved as ```deploy_beanstalk.sh```) to your version control repository for the application you want to deploy. Feel free to adapt and modify to your specific needs.
 
 ~~~shell
 #!/bin/sh
@@ -54,6 +54,8 @@ aws elasticbeanstalk update-environment --environment-name "${ENV_NAME}" --versi
 ~~~
 
 Once you added the above script to your repository, you can activate it on the ***Deployment*** page, via the *Custom script* option.
+
+![Beanstalk Deployment Script](deployment/script_beanstalk.png)
 
 ## [See also](#see-also){:name="see-also"}
 
