@@ -7,7 +7,7 @@ category: Third Party Integrations
 # Setting up Code Climate
 
 There is no specific setup necessary to use Code Climate on Codeship.
-You can follow the [Code Climate docs](https://codeclimate.com/docs#test-coverage)
+You can follow the [Code Climate docs](http://docs.codeclimate.com/category/3-test-coverage)
 set it up with your application and just include the Code Climate API key either
 in the environment settings or prefix your test commands with it as explained in their docs.
 
