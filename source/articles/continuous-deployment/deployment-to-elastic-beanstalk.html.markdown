@@ -42,6 +42,10 @@ pip install awscli
 
 # clean build artifacts and create the application archive (also ignore any files named .git* in any folder)
 git clean -fd
+
+# precompile assets, ...
+
+# zip the application
 zip -x *.git* -r "${APP_NAME}-${APP_VERSION}.zip" * .*
 
 # delete any version with the same name (based on the short revision)
