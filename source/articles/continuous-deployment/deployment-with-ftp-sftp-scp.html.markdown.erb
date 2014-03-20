@@ -15,7 +15,7 @@ We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 
 ## [Continuous Deployment with FTP](#ftp){:name="ftp"}
 
-For ftp the best tool to use is ftp-upload
+For ftp we have preinstalled ftp-upload that helps you push your code to your ftp server.
 
 First you put the ftp password into your Environment settings.
 
@@ -29,20 +29,20 @@ Then for the <%= docs_link_to "branch you want to deploy", "/continuous-deployme
 echo $FTP_PASSWORD │ ftp-upload -sh $host -u $user FILES_TO_UPLOAD
 ~~~
 
-which will upload the file to your server
+which will upload the file to your server.
 
 ## [Continuous Deployment with SFTP](#sftp){:name="sftp"}
 
 SFTP supports FTP like commands over an encrypted SSH session. You can automate
-SFTP by creating a batchfile and handing it to SFTP:
+SFTP by creating a batchfile and handing it to SFTP. The batchfile can contain any commands documented in the interactive commands section of the [SFTP manpage](http://unixhelp.ed.ac.uk/CGI/man-cgi?sftp+1)
+
+In the following example we create *testdir*, cd into it and upload a local file into the testdir:
 
 ~~~ftp
 mkdir testdir
 cd testdir
-put batchfile
+put file_to_upload
 ~~~
-
-The batchfile can contain any commands documented in the interactive commands section of the [SFTP manpage](http://unixhelp.ed.ac.uk/CGI/man-cgi?sftp+1)
 
 For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
 
@@ -76,7 +76,13 @@ will check the files and only upload files that have changed.
 For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
 
 ~~~shell
-rsync -av /local/dir server:/remote/dir
+rsync -av dir_to_upload USER@REMOTE_SERVER:/remote/dir
+~~~
+
+or run rsync over ssh:
+
+~~~shell
+rsync -avz -e "ssh OTHER_SSH_OPTION" local_directory USER@REMOTE_SERVER:~/testfolder
 ~~~
 
 You can read more about the Rsync options in the [Rsync manpage](http://linux.die.net/man/1/rsync).
