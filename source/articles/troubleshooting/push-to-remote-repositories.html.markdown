@@ -15,7 +15,7 @@ error: Could not read c70d417b6c0f4536f9a288888e80955b78b1cbc7
 fatal: Failed to traverse parents of commit d9ff2fe276d15d485f9c71c309160d47cd4ccdfb
 ~~~
 
-This is due to the fact, that we perform a *shallow clone* of the repository to spead up build times.
+This is due to the fact, that we perform a *shallow clone* of the repository to speed up build times.
 
 In order to push to a remote repository you have to do a full checkout first. This can be done with the following command:
 
