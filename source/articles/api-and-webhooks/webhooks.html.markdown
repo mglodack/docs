@@ -1,6 +1,6 @@
 ---
 title: Webhooks
-tags: webhooks
+tags: webhooks, hooks
 category: API and Webhooks
 ---
 
