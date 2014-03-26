@@ -12,7 +12,7 @@ category: API and Webhooks
 ## [Setup](#setup){:name="setup"}
 
 Go to the notification settings of your project and enter your HTTP endpoint.
-![Webhooks](webhooks/notifications.png)
+![Webhooks](api-and-webhooks/notifications.png)
 
 ## [Payloads](#payloads){:name="payloads"}
 
