@@ -1,6 +1,6 @@
 ---
 title: Can't find a file in the repository, classpath or during tests
-tags: file system, case sensitive, case insensitive
+tags: build error
 category: Troubleshooting
 ---
 
