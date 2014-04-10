@@ -6,6 +6,7 @@ category: Continuous Integration
 
 # SSH Access
 
++ [Machine State](#machine-state)
 + [Codeship Command](#codeship-command)
 + [Existing Directories](#existing-directories)
 + [Useful commands](#useful-commands)
@@ -17,6 +18,13 @@ category: Continuous Integration
 + [Generate my SSH Key](#generate-ssh-key)
 
 You are able to activate build debugging at the bottom of the build detail view. (It only works for branches still available in your repository)
+
+## [Machine State](#machine-state){:name="machine-state"}
+
+When you start a SSH Debug session we will clone the repository and set up all environment variables that you defined
+and that we set by default. We won't run any setup or test commands. This gives you a clean machine so you can fully test
+and debug your application on Codeship.
+
 
 ## [Codeship Command](#codeship-command){:name="codeship-command"}
 
