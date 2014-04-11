@@ -1,11 +1,51 @@
 @media #{$large-up} {
     .inner-wrap {
         width: lower-bound($large-range);
-        margin: 0 auto;
+        margin: 0px auto;
     }
 
     .tab-bar {
         display: none;
+    }
+
+    .fixed-bar {
+        $mainButtonBackground: $body-bg;
+        @include grid-column(
+            $columns:12,
+            $float:left
+          );
+        border-bottom: 1px solid darken($body-bg, 5%);
+        position: fixed;
+        height: $tabbar-height;
+        background: $body-bg;
+        z-index: 999;
+        text-align: right;
+
+        .signin {
+            @include radius(8px);
+            @include box-shadow(0 0px 0px 4px darken($mainButtonBackground, 5%));
+            @include gradient-vertical(#fbda00, #f6af00);
+            @extend %main-font;
+            border: 1px solid darken(#fbda00, 5%);
+            text-decoration: none;
+            line-height: 30px;
+            text-align: center;
+            height: 30px;
+            color: #2d333c;
+            width: 70%;
+            margin-top: 0.4rem;
+            font-size: 0.9em;
+            display: inline-block;
+
+            &:hover {
+                @include gradient-vertical(#fbda00, lighten(#f6af00, 12%));
+            }
+        }
+    }
+
+    .index-menu,
+    .main-section {
+        margin-top: 50px;
     }
 
     .index-menu {
@@ -38,6 +78,18 @@
 
     }
 
+    .searchform {
+        margin-top: 5px;
+    }
+
+    .fixed-bar {
+        display: none;
+    }
+
+    .left-off-canvas-toggle.menu-icon span {
+        box-shadow: 0 10px 0 1px #444, 0 16px 0 1px #444, 0 22px 0 1px #444;
+    }
+
     .tab-bar-section .codeship {
         color: white;
 
@@ -58,22 +110,24 @@
     }
 }
 
-.index-menu {
-    .codeship {
-        @media #{$medium-down} {
-            display: none;
-        }
-        margin-top: 0.2rem;
-        margin-bottom: 0.5rem;
-        line-height: 1.4;
-        background: image-url('logo_codeship.png');
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100%;
-        width: 50%;
-        height: 36px;
-        display: block;
+.searchform {
+    margin-top: 0.4rem;
+}
+
+.codeship-logo {
+    @media #{$medium-down} {
+        display: none;
     }
+    background: image-url('logo_codeship.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 130px;
+    height: $tabbar-height;
+    display: block;
+}
+
+.signin {
+
 }
 
 .breadcrumbs {
