@@ -526,7 +526,7 @@ $crumb-side-padding: rem-calc(4);
 
 // Off-canvas
 
-$tabbar-bg: #4b75be;
+$tabbar-bg: darken($body-bg, 5%);
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #FFF;
