@@ -21,7 +21,7 @@
         z-index: 999;
         text-align: right;
 
-        .signin {
+        .signup {
             @include radius(8px);
             @include box-shadow(0 0px 0px 4px darken($mainButtonBackground, 5%));
             @include gradient-vertical(#fbda00, #f6af00);
@@ -124,10 +124,6 @@
     background-size: 130px;
     height: $tabbar-height;
     display: block;
-}
-
-.signin {
-
 }
 
 .breadcrumbs {
