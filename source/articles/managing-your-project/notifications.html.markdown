@@ -32,6 +32,7 @@ You will get notifications whenever a build starts and when it finishes. All inf
 We have support for the following chat notification systems. Currently you can't customize the messages sent by Codeship.
 
 * Hipchat
+* Slack
 * Flowdock
 * Grove.io
 * Campfire
