@@ -25,7 +25,6 @@
             @include radius(8px);
             @include box-shadow(0 0px 0px 4px darken($mainButtonBackground, 5%));
             @include gradient-vertical(#fbda00, #f6af00);
-            @extend %main-font;
             border: 1px solid darken(#fbda00, 5%);
             text-decoration: none;
             line-height: 30px;
