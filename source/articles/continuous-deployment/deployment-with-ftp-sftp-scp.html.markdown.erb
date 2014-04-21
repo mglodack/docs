@@ -8,6 +8,7 @@ category: Continuous Deployment
 We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 
 + [FTP](#ftp)
++ [LFTP](#lftp)
 + [SFTP](#sftp)
 + [SCP](#scp)
 + [RSYNC](#rsync)
@@ -30,6 +31,16 @@ echo $FTP_PASSWORD │ ftp-upload -sh $host -u $user FILES_TO_UPLOAD
 ~~~
 
 which will upload the file to your server.
+
+## [Continuous Deployment with LFTP](#lftp){:name="lftp"}
+
+You can use lftp to recursively upload directories to an ftp server:
+
+~~~shell
+lftp -e "mirror -R {local dir} {remote dir}" -u {username},{password} {host}
+~~~
+
+Taken from [Serverfault](http://serverfault.com/questions/220988/upload-a-directory-recursively-to-an-ftp-server)
 
 ## [Continuous Deployment with SFTP](#sftp){:name="sftp"}
 
