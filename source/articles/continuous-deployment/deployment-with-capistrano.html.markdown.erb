@@ -1,0 +1,21 @@
+---
+title: Continuous Deployment with Capistrano
+tags: deployment, capistrano
+category: Continuous Deployment
+---
+
+# Continuous Deployment with Capistrano
+
++ [Capistrano on Codeship](#capistrano-on-codeship)
+
+You can deploy any kind of Application with capistrano.
+It's most commonly used in the Ruby on Rails community.
+For some detailed information about Capistrano please checkout [capistranorb.com](http://capistranorb.com){:target="_blank"}.
+
+## [Capistrano on Codeship](#capistrano-on-codeship){:name="capistrano-on-codeship"}
+
+When your capistrano task is ready and working you just need to add the Capistrano Deployment on Codeship.
+You just need to specify the task we should run for you. Most of the times this is `deploy`.
+Checkout our <%= docs_link_to "Deployment Piplines", "/continuous-deployment/deployment-pipelines/" %> if you want to add multiple Capistrano Deployments.
+
+![Capistrano](deployment/capistrano_deployment_setup.png)
