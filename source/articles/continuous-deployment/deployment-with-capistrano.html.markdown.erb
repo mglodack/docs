@@ -7,6 +7,7 @@ category: Continuous Deployment
 # Continuous Deployment with Capistrano
 
 + [Capistrano on Codeship](#capistrano-on-codeship)
++ [Capistrano with ScriptDeployment](#capistrano-with-script-deployment)
 
 You can deploy any kind of Application with capistrano.
 It's most commonly used in the Ruby on Rails community.
@@ -20,3 +21,12 @@ You just need to specify the task we should run for you. Most of the times this 
 Checkout our <%= docs_link_to "Deployment Piplines", "/continuous-deployment/deployment-pipelines/" %> if you want to add multiple Capistrano Deployments.
 
 ![Capistrano](deployment/capistrano_deployment_setup.png)
+
+## [Capistrano with ScriptDeployment](#capistrano-with-script-deployment){:name="capistrano-with-script-deployment"}
+
+You don't need to use our Capistrano Integration. If you have a more complex Deployment Setup you can call capistrano directly.
+
+~~~shell
+bundle exec cap deploy
+~~~
+
