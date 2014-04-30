@@ -1,9 +1,9 @@
 ---
-title: Continuous Deployment with FTP, SFTP, SCP and RSYNC
+title: Continuous Deployment with FTP, SFTP, SCP, RSYNC and SSH
 tags: deployment
 category: Continuous Deployment
 ---
-# Continuous Deployment to your server with FTP, SFTP, SCP and RSYNC
+# Continuous Deployment to your server with FTP, SFTP, SCP, RSYNC and SSH
 
 We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 
@@ -12,6 +12,7 @@ We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 + [SCP](#scp)
 + [RSYNC](#rsync)
 + [Run scripts with SSH](#run-scripts)
++ [Authenticate via SSH](#authenticate)
 
 ## [Continuous Deployment with FTP](#ftp){:name="ftp"}
 
@@ -101,3 +102,19 @@ ssh USER@HOST "deploy_code.sh"
 
 Make sure you add the <%= docs_link_to "SSH Key of your project", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %>
 into your servers ***authorized_keys file***.
+
+## [Authenticating on your server via ssh](#authenticate){:name="authenticate"}
+
+For authenticating on your server you need to add the <%= docs_link_to "Codeship public SSH Key", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %> to the authorized_keys file on your server.
+
+The authorized_keys file is located in your home directory in the ```.ssh``` folder.
+
+~~~shell
+mkdir -p ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod -R go-rwx ~/.ssh/
+
+# add the Codeship public SSH key to ~/.ssh/authorized_keys
+editor ~/.ssh/authorized_keys
+~~~
+
