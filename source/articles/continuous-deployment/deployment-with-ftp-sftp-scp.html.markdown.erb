@@ -8,7 +8,6 @@ category: Continuous Deployment
 We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 
 + [FTP](#ftp)
-+ [LFTP](#lftp)
 + [SFTP](#sftp)
 + [SCP](#scp)
 + [RSYNC](#rsync)
@@ -17,31 +16,31 @@ We generally advise to use any ssh based tools like SFTP or SCP for deployment.
 
 ## [Continuous Deployment with FTP](#ftp){:name="ftp"}
 
-For ftp we have preinstalled ftp-upload that helps you push your code to your ftp server.
+For ftp we have recommend using _lftp_ for uploading your files. The following section will help you get started.
 
-First you put the ftp password into your Environment settings.
-
-~~~shell
-FTP_PASSWORD=YOUR_PASSWORD
-~~~
-
-Then for the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
+To keep your password out of your build logs, add it as an environment variable in your project configuration
 
 ~~~shell
-echo $FTP_PASSWORD │ ftp-upload -sh $host -u $user FILES_TO_UPLOAD
+FTP_PASSWORD="your_ftp_password"
+FTP_USER="your_ftp_username"
 ~~~
 
-which will upload the file to your server.
-
-## [Continuous Deployment with LFTP](#lftp){:name="lftp"}
-
-You can use lftp to recursively upload directories to an ftp server:
+To recursivly upload a director to a remote server, you would use a command like the following
 
 ~~~shell
 lftp -e "mirror -R {local dir} {remote dir}" -u {username},{password} {host}
 ~~~
 
-Taken from [Serverfault](http://serverfault.com/questions/220988/upload-a-directory-recursively-to-an-ftp-server)
+So if you wanted to copy all of your repository to a remote server, you could add the following command to a _script deployment_ on the branch you want to deploy.
+
+* Make sure your _remote dir_ does not end with a slash unless you want your copy to live in a subdirectory called _clone_.
+* Also make sure your _remote dir_ already exists before trying your first deployment.
+
+~~~shell
+lftp -e "mirror -R ~/clone/ /directory/on/your/server" -u $FTP_USER,$FTP_PASSWORD your.server.com
+~~~
+
+For more information on using _lftp_ please see the [man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/lftp.1.html) available online.
 
 ## [Continuous Deployment with SFTP](#sftp){:name="sftp"}
 
