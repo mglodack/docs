@@ -46,7 +46,7 @@ For more information on using _lftp_ please see the [man page](http://manpages.u
 
 All of the methods below can use key based authentication. As this does not require you to provide your account password to Codeship, we strongly advise to configure this.
 
-You need to add the <%= docs_link_to "Codeship public SSH Key", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %> to your authorized_keys file on the server. This file is located in a folder called ```.ssh``` beneath your home directory. Below is a little script which prepares everything and opens an editor window where you can simply paste your key and save the file.
+You need to add the <%= docs_link_to "Codeship public SSH Key", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %> to your authorized_keys file on the server. This file is located in a folder called ```.ssh``` beneath your home directory. Below are the commands you need to prepare everything and open an editor window where you can simply paste your key and save the file. Please run those commands via an SSH session on your server.
 
 ~~~shell
 mkdir -p ~/.ssh
