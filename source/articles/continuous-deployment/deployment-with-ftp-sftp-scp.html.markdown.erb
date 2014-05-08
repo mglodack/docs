@@ -43,7 +43,7 @@ So if you wanted to copy all of your repository to a remote server, you could ad
 lftp -e "mirror -R ~/clone/ /path/on/server" -u $FTP_USER,$FTP_PASSWORD your.server.com
 ~~~
 
-For more information on using _lftp_ please see the [man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/lftp.1.html) available online.
+For more information on using _lftp_ please see the <%= man_link_to "LFTP man page", "lftp" %> available online.
 
 ## [Authenticating via SSH public keys](#authenticate){:name="authenticate"}
 
@@ -62,7 +62,7 @@ editor ~/.ssh/authorized_keys
 
 ## [Continuous Deployment with SFTP](#sftp){:name="sftp"}
 
-SFTP supports FTP like commands over an encrypted SSH session. You can automate SFTP by creating a batchfile and handing it to SFTP. The batchfile can contain any commands documented in the interactive commands section of the [SFTP man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/sftp.1.html).
+SFTP supports FTP like commands over an encrypted SSH session. You can automate SFTP by creating a batchfile and handing it to SFTP. The batchfile can contain any commands documented in the interactive commands section of the <%= man_link_to "SFTP man page", "sftp" %>.
 
 As with the the FTP example above, we will deploy the complete repository contents onto a remote server.
 
@@ -86,7 +86,7 @@ into [your servers ***authorized_keys file***](#authenticate).
 
 SCP allows you to copy files from your local system to another server. With the ***-r*** option
 you can also recursively upload directories. You can read more about the different options
-in the [SCP man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/scp.1.html).
+in the <%= man_link_to "SCP man page", "scp" %>.
 
 For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
 
@@ -114,7 +114,7 @@ Or you can also run rsync over ssh.
 rsync -avz -e "ssh" ~/clone/ ssh_user@your.server.com:/path/on/server/
 ~~~
 
-You can read more about the Rsync options in the [Rsync man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/rsync.1.html).
+You can read more about the Rsync options in the <%= man_link_to "Rsync man page", "rsync" %>.
 
 ## [Start services for deployment through SSH](#run-scripts){:name="run-scripts"}
 
