@@ -44,25 +44,25 @@ For more information on using _lftp_ please see the [man page](http://manpages.u
 
 ## [Continuous Deployment with SFTP](#sftp){:name="sftp"}
 
-SFTP supports FTP like commands over an encrypted SSH session. You can automate
-SFTP by creating a batchfile and handing it to SFTP. The batchfile can contain any commands documented in the interactive commands section of the [SFTP manpage](http://unixhelp.ed.ac.uk/CGI/man-cgi?sftp+1)
+SFTP supports FTP like commands over an encrypted SSH session. You can automate SFTP by creating a batchfile and handing it to SFTP. The batchfile can contain any commands documented in the interactive commands section of the [SFTP manpage](http://manpages.ubuntu.com/manpages/quantal/en/man1/sftp.1.html).
 
-In the following example we create *testdir*, cd into it and upload a local file into the testdir:
+As with the the FTP example above, we will deploy the complete repository contents onto a remote server.
+
+Please add a file containing the following directives to your repository. You can name it any way you like. In our case we will call it _production_ and store it in a subdirectory called _deploy_.
 
 ~~~ftp
-mkdir testdir
-cd testdir
-put file_to_upload
+mkdir /directory/on/your/server
+put -r ~/clone/* /directory/on/your/server/
 ~~~
 
 For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
 
 ~~~shell
-sftp -b batchfile USER@YOUR_SERVER
+sftp -b deploy/production USER@YOUR_SERVER
 ~~~
 
 Make sure you add the <%= docs_link_to "SSH Key of your project", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %>
-into your servers ***authorized_keys file***.
+into [your servers ***authorized_keys file***](#authenticate).
 
 ## [Continuous Deployment with SCP](#scp){:name="scp"}
 
