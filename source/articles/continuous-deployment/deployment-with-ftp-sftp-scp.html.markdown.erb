@@ -99,21 +99,19 @@ into your servers ***authorized_keys file***.
 Rsync is an amazing tool to sync your local filesystem with an external server. Rsync
 will check the files and only upload files that have changed.
 
-For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
+For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains the following code.
 
 ~~~shell
-rsync -av dir_to_upload USER@REMOTE_SERVER:/remote/dir
+rsync -av ~/clone/ your_ssh_username@your.server.com:/directory/on/your/server/
 ~~~
 
-or run rsync over ssh:
+Or you can also run rsync over ssh.
 
 ~~~shell
-rsync -avz -e "ssh OTHER_SSH_OPTION" local_directory USER@REMOTE_SERVER:~/testfolder
+rsync -avz -e "ssh OTHER_SSH_OPTION" ~/clone/ your_ssh_username@your.server.com:/directory/on/your/server/
 ~~~
 
-You can read more about the Rsync options in the [Rsync manpage](http://linux.die.net/man/1/rsync).
-Make sure you add the <%= docs_link_to "SSH Key of your project", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %>
-into your servers ***authorized_keys file***.
+You can read more about the Rsync options in the [Rsync man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/rsync.1.html).
 
 ## [Start services for deployment through SSH](#run-scripts){:name="run-scripts"}
 
