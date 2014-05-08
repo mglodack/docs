@@ -83,12 +83,12 @@ into [your servers ***authorized_keys file***](#authenticate).
 
 SCP allows you to copy files from your local system to another server. With the ***-r*** option
 you can also recursively upload directories. You can read more about the different options
-in the [SCP man page](http://linux.die.net/man/1/scp).
+in the [SCP man page](http://manpages.ubuntu.com/manpages/quantal/en/man1/scp.1.html).
 
 For the <%= docs_link_to "branch you want to deploy", "/continuous-deployment/deployment-pipelines/" %> you create a script deployment that contains:
 
 ~~~shell
-scp -rp source_directory user@dest:/path
+scp -rp ~/clone/* your_ssh_username@your.server.com:/directory/on/your/server/
 ~~~
 
 Make sure you add the <%= docs_link_to "SSH Key of your project", "/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/" %>
