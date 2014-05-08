@@ -69,4 +69,8 @@ module CustomHelpers
       return link_to text, page_path
     end
   end
+
+  def man_link_to text, man_page, section = 1
+    link_to text, "http://manpages.ubuntu.com/manpages/#{config[:ubuntu_version]}/en/man#{section}/#{man_page.downcase}.#{section}.html"
+  end
 end
