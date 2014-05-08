@@ -1,5 +1,8 @@
 require 'builder'
 
+# set ubuntu version for the man_link_to helper
+set :ubuntu_version, 'trusty'
+
 # we need kramdown for defining options in links
 set :markdown,
   layout_engine: :haml,
