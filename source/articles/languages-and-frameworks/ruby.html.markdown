@@ -48,8 +48,8 @@ The following Ruby versions are preinstalled
 2.0.0-p451
 
 ## MRI 2.1
-2.1.0
-2.1.1
+2.1.0\\
+2.1.1\\
 2.1.2
 
 ## Setting the Ruby version through a .ruby-version file
