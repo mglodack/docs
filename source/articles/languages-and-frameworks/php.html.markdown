@@ -39,7 +39,7 @@ pear install pear/PHP_CodeSniffer
 ## Composer
 
 ~~~shell
-composer install
+composer install --prefer-source --no-interaction
 ~~~
 
 ## Pecl
