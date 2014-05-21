@@ -8,7 +8,7 @@ category: Databases and Queues
 
 MongoDB **2.6.1** runs on the default port and doesn't require any credentials.
 
-If you want to use version 2.4 of MongoDB you can download and run it with code like the following.
+If you want to use version 2.4 of MongoDB you can download and run it with code like the following. Please keep in mind, that this version of MongoDB is then running on a different port, which you explicitly have to specify via the command line parameter.
 
 ~~~bash
 # Change the path to the downloaded file here to update the mongo version
