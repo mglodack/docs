@@ -30,19 +30,20 @@ Make sure to change YOUR_PHP_VERSION to the one you set through phpenv or the de
 ## Dependencies and Extensions
 
 You can install dependencies through pear and composer. Extensions can be installed through pecl. If you need any other tools please send us a message.
+
 ### Pear
 
 ~~~shell
 pear install pear/PHP_CodeSniffer
 ~~~
 
-## Composer
+### Composer
 
 ~~~shell
 composer install --prefer-source --no-interaction
 ~~~
 
-## Pecl
+### Pecl
 
 ~~~shell
 pecl install -f memcache
