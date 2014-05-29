@@ -45,7 +45,8 @@ The following Ruby versions are preinstalled
 2.0.0-p195\\
 2.0.0-p247\\
 2.0.0-p353\\
-2.0.0-p451
+2.0.0-p451\\
+2.0.0-p481
 
 ## MRI 2.1
 2.1.0\\
