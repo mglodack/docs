@@ -84,4 +84,22 @@ curl -i https://www.codeship.io/api/v1/builds/:build_id/restart.json?api_key=val
 }
 ~~~
 
+#### Restart the last build of a project through a script
 
+You can restart the last build for a specific branch of a project with the
+codeship_restart_build script.
+
+Set the following variables in your projects environment settings first
+
+~~~shell
+CODESHIP_API_KEY
+CODESHIP_API_PROJECT_ID (you can get that one from the URL of a project)
+CODESHIP_API_BRANCH
+~~~
+
+By adding the following command to your build you can restart the last build on a specific
+branch for the project you defined with the environment variables.
+
+~~~shell
+codeship_restart_build
+~~~
