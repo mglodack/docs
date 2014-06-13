@@ -97,5 +97,9 @@ CODESHIP_API_PROJECT_ID (you can get that one from the URL of a project)
 CODESHIP_API_BRANCH
 ~~~
 
-Then you can run the codeship_restart_build script for example as the last one of your
-test commands to test the last build of another project whenever a build finishes.
+By adding the following command to your build you can restart the last build on a specific
+branch for the project you defined with the environment variables.
+
+~~~shell
+codeship_restart_build
+~~~
