@@ -6,7 +6,7 @@ category: Languages and Frameworks
 
 # Go
 
-We have Go 1.2.2 installed on in our virtual machine
+We have Go 1.3 installed on in our virtual machine
 
 We set the ```GOPATH``` to /home/rof and checkout your code into
 
