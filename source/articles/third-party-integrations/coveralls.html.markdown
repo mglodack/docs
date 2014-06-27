@@ -7,7 +7,7 @@ category: Third Party Integrations
 # Setting up Coveralls
 
 There is no specific setup necessary to use Coveralls on Codeship.
-You can follow the [Coveralls docs](https://coveralls.io/docs)
+You can follow the [Coveralls docs](https://coveralls.io/docs/supported_continuous_integration)
 
 # Coveralls Discount Code
 
