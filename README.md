@@ -6,7 +6,7 @@ Docs
 Start middleman with
 
 ```
-./start_server
+./script/start_server
 ```
 
 when in Vagrant as the NFS share doesn't play well with detecting changes in middleman
