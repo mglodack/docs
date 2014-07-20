@@ -10,7 +10,7 @@ If you don't want to run a command on a specific branch use the following syntax
 In this example we run your command on every branch except gh_pages
 
 ~~~shell
-if [ "$CI_BRANCH" != "gh_pages" ]; then YOUR_COMMAND; fi
+if [ "$CI_BRANCH" != "gh-pages" ]; then YOUR_COMMAND; fi
 ~~~
 
 ## Run command only on one branch
