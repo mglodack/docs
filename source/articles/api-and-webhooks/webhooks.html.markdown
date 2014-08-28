@@ -42,3 +42,5 @@ Whereas the `status` can have 3 different values.
 - `testing` for newly started build
 - `error` for failed builds
 - `success` for passed builds
+- `stopped` for stopped builds
+- `waiting` for waiting builds
