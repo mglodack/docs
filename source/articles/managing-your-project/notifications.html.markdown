@@ -8,14 +8,14 @@ category: Managing your project
 
 + [Where can I configure Notifications](#configure-notifications)
 + [Email notification](#email)
-+ [Github Status API](#github)
++ [GitHub Status API](#github)
 + [3rd party chat notifications](#chat)
 
 ## <a name="configure-notifications"></a>Where can I configure Notifications
 Click the project menu on the top navigation and click the settings wheel to get to your project settings. There click the **Notifications** link.
 
-## <a name="github"></a>Github Status API
-We will use the Github Oauth Token we got when you connected Codeship to your GitHub account to set the build status for every commit on GitHub. Take a look at the [blog post by GitHub](https://github.com/blog/1227-commit-status-api) that explains their status API.
+## <a name="github"></a>GitHub Status API
+We will use the GitHub Oauth Token we got when you connected Codeship to your GitHub account to set the build status for every commit on GitHub. Take a look at the [blog post by GitHub](https://github.com/blog/1227-commit-status-api) that explains their status API.
 
 ## <a name="email"></a>Email notification
 By default anyone who either owns a project or was added as a team member will receive an email whenever a build fails and if a build on a branch passes when the one before failed. So whenever a branch is back to OK you will be notified.
