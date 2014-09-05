@@ -37,7 +37,7 @@ We send you a POST request containing the following build data
 }
 ~~~
 
-Whereas the `status` can have 3 different values.
+Whereas the `status` can have 5 different values.
 
 - `testing` for newly started build
 - `error` for failed builds
